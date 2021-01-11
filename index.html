@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="h-100" lang="en">
+<html lang="en">
 
 <head>
   <meta charset="utf-8" />
@@ -23,15 +23,16 @@
   <link rel="icon" href="img/favicon/favicon.ico" />
   <meta name="theme-color" content="#7952b3" />
 
-  <!-- Animation libraries -->
+  <!-- Vendors -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
   
   
 
 </head>
 
 <body>
-  <div class="cover-container">
+  <div id="bgImg" class="cover-container">
     <header>
       <nav id="nav" class="navbar navbar-expand-md fixed-top">
         <div class="container">
@@ -83,16 +84,32 @@
     <div class="hero-box">
       <h1 class="hero-title">Augmented Visual Art</h1>
       <h3>Un'occhio sopra l'arte</h3>
+      <a class="d-flex flex-column" href="#more">Scopri di più<i class="fas fa-chevron-down"></i></a>
+     
     </div>
   </div>
 
-  <main>
-    <section class="card-wrapper px-4 py-3">
-      <div class="card-box row justify-content-center py-4">
+  <main class="">
+    
+    <section id="more" class="card-container px-4 py-3">
+      <div class="row w-100 justify-content-center py-4">
         <h2>Mission</h2>
       </div>
-      <div class="card-deck m-auto">
-        <div class="card text-white bg-primary mb-3">
+
+      <div class="card-deck">
+
+        <div class="card mission-card mb-3">
+          <div class="card-header ">Header</div>
+          <div class="card-body">
+            <h5 class="card-title">Primary card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up
+              the bulk of the card's content.
+            </p>
+          </div>
+        </div>
+
+        <div class="card mission-card mb-3">
           <div class="card-header">Header</div>
           <div class="card-body">
             <h5 class="card-title">Primary card title</h5>
@@ -103,18 +120,7 @@
           </div>
         </div>
 
-        <div class="card text-white bg-primary mb-3">
-          <div class="card-header">Header</div>
-          <div class="card-body">
-            <h5 class="card-title">Primary card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up
-              the bulk of the card's content.
-            </p>
-          </div>
-        </div>
-
-        <div class="card text-white bg-primary mb-3">
+        <div class="card mission-card mb-3">
           <div class="card-header">Header</div>
           <div class="card-body">
             <h5 class="card-title">Primary card title</h5>
@@ -132,13 +138,13 @@
       <div class="storybox-title">
         <h2 class="text-center">Storytelling Title</h2>
       </div>
+
       <div class="storybox-wrapper">
     
         <div class="story-card">
           <div class="story-img"
-            data-aos="fade-right"
-            data-aos="fade-left" 
-            data-aos-offset="500"
+            data-aos="zoom-out-down" 
+            data-aos-offset="300"
             data-aos-duration="500">
             <img style="width: 100%;"
               src="https://images.unsplash.com/photo-1610129142564-79956dcecc7b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
@@ -146,7 +152,7 @@
           </div>
           <div class="story-block">
             <div class="box-header">
-              <h2>Heading</h2>
+              <h2 class="story-title">Heading</h2>
             </div>
             <div class="box-body">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio aspernatur, reprehenderit animi quibusdam
@@ -155,12 +161,11 @@
             </div>
           </div>
         </div>
-    
     
         <div class="story-card">
           <div class="story-img" 
-            data-aos="fade-left" 
-            data-aos-offset="500"
+            data-aos="zoom-out-down" 
+            data-aos-offset="300"
             data-aos-duration="500">
             <img style="width: 100%;"
               src="https://images.unsplash.com/photo-1610129142564-79956dcecc7b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
@@ -177,12 +182,11 @@
             </div>
           </div>
         </div>
-
+  
         <div class="story-card">
           <div class="story-img"
-            data-aos="fade-right"
-            data-aos="fade-left" 
-            data-aos-offset="500"
+            data-aos="zoom-out-down" 
+            data-aos-offset="300"
             data-aos-duration="500">
             <img style="width: 100%;"
               src="https://images.unsplash.com/photo-1610129142564-79956dcecc7b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
@@ -203,14 +207,31 @@
       </div>
     </section>
 
-    <section class="p-4"></section>
+    <section class="prototype-container w-100 p-4">
+      <h2 class="prototype-title text-center mb-3">
+        Prototype Title
+      </h2>
+      <div class="prototype-wrapper bg-primary vh-100">
+        <h3 class="text-center">3D Model Needed</h3>
+        <div class="prototype-box">
+
+        </div>
+      </div>
+    </section>
+
+    <section class="cerbellvm-cta p-4">
+      <div class="row w-100">
+        <h2>How we reached this ?</h2>
+      </div>
+      <div class="cerbellvm-wrapper"></div>
+    </section>
 
 
 
   </main>
 
 
-  <footer>
+  <footer class="w-100">
     <div class="row w-100">
       <div class="col-lg justify-content-center align-content-center">
         <div class="footer-brand">

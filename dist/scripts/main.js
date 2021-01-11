@@ -1,5 +1,30 @@
-
+//Initialize AOS animation
 AOS.init();
+
+//Smooth scrolling when a#more is clicked
+document.querySelectorAll('a[href^="#more"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+      });
+  });
+});
+
+//Prevent background image from resize on scrolling
+var breakpoint = 991;
+var bgHeight = function() {
+    $('#bgImg').css('height', $(window).height() + 'px');
+}; bgHeight();
+var windowWidth = $(window).height();
+$(window).on('resize', function() {
+    if ((($(this).width() <= breakpoint) && ($(this).width() != windowWidth))
+        || ($(this).width() > breakpoint)) {
+        bgHeight();
+    }
+    windowWidth = $(window).width();
+});
 
 
 //Change background-color of navbar on collapse or scroll

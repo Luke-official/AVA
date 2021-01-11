@@ -4,6 +4,7 @@ nav.navbar {
   font-size: 20px;
   color: #fff;
   background-color: transparent;
+  font-weight: 500;
 
   a {
     color: $total_white;
@@ -73,26 +74,21 @@ nav.navbar {
     }
   }
 
-  div#collapsedNav.navbar-collapse{
-
+  div#collapsedNav.navbar-collapse {
     @include responsive_tab() {
-
       ul.navbar-nav {
-
         li.nav-item {
           text-align: center;
-        } 
+        }
       }
-
     }
 
-    div.nav-btn{
+    div.nav-btn {
       display: flex;
 
-      button.btn.btn-primary{
+      button.btn.btn-primary {
         margin: auto;
       }
-
     }
   }
 }

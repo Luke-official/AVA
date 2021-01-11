@@ -14,13 +14,11 @@
   padding: 0; }
 
 html {
-  font-size: 1em;
-  height: 100%; }
+  font-size: 1em; }
 
 body {
   font-family: 'Quicksand', sans-serif !important;
-  background-color: #bfbfbf;
-  width: 100%; }
+  background-color: #bfbfbf; }
 
 *:focus {
   outline: none; }
@@ -38,7 +36,8 @@ body {
 nav.navbar {
   font-size: 20px;
   color: #fff;
-  background-color: transparent; }
+  background-color: transparent;
+  font-weight: 500; }
   nav.navbar a {
     color: #fff; }
     nav.navbar a.navbar-brand img {
@@ -96,6 +95,27 @@ footer {
     width: 60px;
     height: 60px; }
 
+section.card-container div.card.mission-card {
+  margin-right: 15px;
+  margin-bottom: 0;
+  margin-left: 15px;
+  border: none; }
+  section.card-container div.card.mission-card div.card-header {
+    background-color: #0072bb;
+    color: #bfbfbf;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 8px 16px #00000052;
+    border-radius: 5px; }
+  section.card-container div.card.mission-card div.card-body {
+    transition: box-shadow 0.2s linear;
+    border-radius: 5px; }
+    section.card-container div.card.mission-card div.card-body:hover {
+      box-shadow: 0 8px 16px #0000002e; }
+
+.story-title {
+  font-family: 'Merriweather', sans-serif; }
+
 /*
     @include responsive_tab(){
         
@@ -113,6 +133,7 @@ section.storybox-container {
     flex-flow: column;
     padding: 1.5em; }
     section.storybox-container div.storybox-wrapper div.story-card {
+      width: 100%;
       padding: 1em;
       display: flex;
       border-radius: 5px; }
@@ -120,7 +141,7 @@ section.storybox-container {
       section.storybox-container div.storybox-wrapper div.story-card div.story-block {
         height: 50%; }
       section.storybox-container div.storybox-wrapper div.story-card:nth-child(odd) {
-        background-color: #212121;
+        background-color: #023b87;
         color: #bfbfbf; }
     @media only screen and (max-width: 767px) {
       section.storybox-container div.storybox-wrapper div.story-card {
@@ -165,15 +186,22 @@ div.cover-container {
   background-repeat: no-repeat;
   background-blend-mode: overlay;
   background-attachment: fixed;
-  background-size: cover; }
+  background-size: cover;
+  z-index: -10; }
   div.cover-container div.hero-box {
-    width: max-content;
+    width: 100%;
     text-align: center;
     color: #bfbfbf;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
+    div.cover-container div.hero-box a {
+      width: 100%;
+      margin-top: 3em;
+      text-decoration: none;
+      color: #bfbfbf;
+      font-size: 1.4rem; }
     @media only screen and (max-width: 576) {
       div.cover-container div.hero-box h1.hero-title {
         font-size: 3.5em; }

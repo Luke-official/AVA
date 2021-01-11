@@ -16,16 +16,18 @@
 
 html{
     font-size: 1em; //1 em = 10px
-    height: 100%;
+   
+    
 }
 
 body{
     font-family: 'Quicksand', sans-serif !important;
     background-color: $primary_white;
-    width: 100%;
+    
 }
 
 *:focus {
     outline: none;
   }
+
 

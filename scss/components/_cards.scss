@@ -1,0 +1,29 @@
+section.card-container {
+
+ 
+
+    div.card.mission-card {
+      margin-right: 15px;
+      margin-bottom: 0;
+      margin-left: 15px;
+      border: none;
+
+        div.card-header {
+            background-color: $primary_blue;
+            color: $primary_white;
+            text-align: center;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 8px 16px #00000052;
+            border-radius: 5px;
+        }
+
+        div.card-body {
+            transition: box-shadow 0.2s linear;
+            border-radius: 5px;
+            &:hover {
+                box-shadow: 0 8px 16px #0000002e;
+            }
+        }
+    }
+
+}
