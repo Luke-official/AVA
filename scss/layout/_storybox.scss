@@ -1,0 +1,57 @@
+section.storybox-container {
+  padding: 2em;
+
+  div.storybox-wrapper {
+    display: flex;
+    flex-flow: column;
+    padding: 1.5em;
+
+    div.story-card{
+        padding: 1em;
+        display: flex;
+        border-radius: 5px;
+
+        div.story-img,
+        div.story-block {
+          height: 50%;
+        }
+
+        &:nth-child(odd){
+            background-color: $primary_dark;
+            color: $primary_white;
+        }
+
+    }
+
+    
+
+    @include responsive_tab() {
+      div.story-card {
+        flex-flow: column wrap;
+
+        div.story-img,
+        div.story-block {
+          width: 100%;
+        }
+      }
+    }
+
+    @include responsive(768px,2000px) {
+      div.story-card {
+        flex-flow: row wrap;
+
+        &:nth-child(2) {
+          flex-direction: row-reverse;
+        }
+
+        div.story-img,
+        div.story-block {
+          padding: 2em 2em;
+          width: 50%;
+        }
+      }
+    }
+
+    
+  }
+}

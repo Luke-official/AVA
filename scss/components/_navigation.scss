@@ -1,0 +1,98 @@
+@import "helpers/responsive_mixin";
+
+nav.navbar {
+  font-size: 20px;
+  color: #fff;
+  background-color: transparent;
+
+  a {
+    color: $total_white;
+
+    &.navbar-brand {
+      img {
+        height: 60px;
+        width: 60px;
+      }
+    }
+  }
+
+  .navbar-toggler {
+    padding: 0;
+  }
+
+  //navbar button menu
+  button.navbar-toggler {
+    //Animated Navbar Icon
+
+    &:focus {
+      outline: none;
+    }
+    span {
+      .ham {
+        cursor: pointer;
+        -webkit-tap-highlight-color: transparent;
+        transition: transform 400ms;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      .ham6 .top {
+        stroke-dasharray: 40 172;
+      }
+      .ham6 .middle {
+        stroke-dasharray: 40 111;
+      }
+      .ham6 .bottom {
+        stroke-dasharray: 40 172;
+      }
+      .ham6.active .top {
+        stroke-dashoffset: -132px;
+      }
+      .ham6.active .middle {
+        stroke-dashoffset: -71px;
+      }
+      .ham6.active .bottom {
+        stroke-dashoffset: -132px;
+      }
+
+      .hamRotate.active {
+        transform: rotate(45deg);
+      }
+      .hamRotate180.active {
+        transform: rotate(180deg);
+      }
+      .line {
+        fill: none;
+        transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+        stroke: $total_white;
+        stroke-width: 5.5;
+        stroke-linecap: round;
+      }
+    }
+  }
+
+  div#collapsedNav.navbar-collapse{
+
+    @include responsive_tab() {
+
+      ul.navbar-nav {
+
+        li.nav-item {
+          text-align: center;
+        } 
+      }
+
+    }
+
+    div.nav-btn{
+      display: flex;
+
+      button.btn.btn-primary{
+        margin: auto;
+      }
+
+    }
+  }
+}

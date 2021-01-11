@@ -1,0 +1,31 @@
+/*
+	Theme Name: Ava Template
+	Description: AVA Design
+	Author: Luke_Official.dev
+	Author URI: https://lukeofficial.dev/
+*/
+
+@import 'base/fonts';
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+	padding: 0;
+}
+
+html{
+    font-size: 1em; //1 em = 10px
+    height: 100%;
+}
+
+body{
+    font-family: 'Quicksand', sans-serif !important;
+    background-color: $primary_white;
+    width: 100%;
+}
+
+*:focus {
+    outline: none;
+  }
+

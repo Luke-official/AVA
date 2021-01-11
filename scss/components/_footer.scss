@@ -1,0 +1,23 @@
+footer{
+    background-color: #071165;
+    padding: 1em .8em;
+    color: $primary_white;
+    div.row{
+
+        div{
+            
+            p.lead{
+                color: $primary_white;
+            }
+
+            a.navbar-brand{
+
+                
+                img{
+                    width: 60px;
+                    height: 60px;
+                }
+            }
+        }
+    }
+}

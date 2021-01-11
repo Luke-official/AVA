@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+/*
+	Theme Name: Ava Template
+	Description: AVA Design
+	Author: Luke_Official.dev
+	Author URI: https://lukeofficial.dev/
+*/
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 1em;
+  height: 100%; }
+
+body {
+  font-family: 'Quicksand', sans-serif !important;
+  background-color: #bfbfbf;
+  width: 100%; }
+
+*:focus {
+  outline: none; }
+
+/*
+    @include responsive_tab(){
+        
+    }
+
+
+    @include responsive(350,1200){
+        @content
+    }
+*/
+nav.navbar {
+  font-size: 20px;
+  color: #fff;
+  background-color: transparent; }
+  nav.navbar a {
+    color: #fff; }
+    nav.navbar a.navbar-brand img {
+      height: 60px;
+      width: 60px; }
+  nav.navbar .navbar-toggler {
+    padding: 0; }
+  nav.navbar button.navbar-toggler:focus {
+    outline: none; }
+  nav.navbar button.navbar-toggler span .ham {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 400ms;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+  nav.navbar button.navbar-toggler span .ham6 .top {
+    stroke-dasharray: 40 172; }
+  nav.navbar button.navbar-toggler span .ham6 .middle {
+    stroke-dasharray: 40 111; }
+  nav.navbar button.navbar-toggler span .ham6 .bottom {
+    stroke-dasharray: 40 172; }
+  nav.navbar button.navbar-toggler span .ham6.active .top {
+    stroke-dashoffset: -132px; }
+  nav.navbar button.navbar-toggler span .ham6.active .middle {
+    stroke-dashoffset: -71px; }
+  nav.navbar button.navbar-toggler span .ham6.active .bottom {
+    stroke-dashoffset: -132px; }
+  nav.navbar button.navbar-toggler span .hamRotate.active {
+    transform: rotate(45deg); }
+  nav.navbar button.navbar-toggler span .hamRotate180.active {
+    transform: rotate(180deg); }
+  nav.navbar button.navbar-toggler span .line {
+    fill: none;
+    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+    stroke: #fff;
+    stroke-width: 5.5;
+    stroke-linecap: round; }
+  @media only screen and (max-width: 767px) {
+    nav.navbar div#collapsedNav.navbar-collapse ul.navbar-nav li.nav-item {
+      text-align: center; } }
+  nav.navbar div#collapsedNav.navbar-collapse div.nav-btn {
+    display: flex; }
+    nav.navbar div#collapsedNav.navbar-collapse div.nav-btn button.btn.btn-primary {
+      margin: auto; }
+
+footer {
+  background-color: #071165;
+  padding: 1em .8em;
+  color: #bfbfbf; }
+  footer div.row div p.lead {
+    color: #bfbfbf; }
+  footer div.row div a.navbar-brand img {
+    width: 60px;
+    height: 60px; }
+
+/*
+    @include responsive_tab(){
+        
+    }
+
+
+    @include responsive(350,1200){
+        @content
+    }
+*/
+section.storybox-container {
+  padding: 2em; }
+  section.storybox-container div.storybox-wrapper {
+    display: flex;
+    flex-flow: column;
+    padding: 1.5em; }
+    section.storybox-container div.storybox-wrapper div.story-card {
+      padding: 1em;
+      display: flex;
+      border-radius: 5px; }
+      section.storybox-container div.storybox-wrapper div.story-card div.story-img,
+      section.storybox-container div.storybox-wrapper div.story-card div.story-block {
+        height: 50%; }
+      section.storybox-container div.storybox-wrapper div.story-card:nth-child(odd) {
+        background-color: #212121;
+        color: #bfbfbf; }
+    @media only screen and (max-width: 767px) {
+      section.storybox-container div.storybox-wrapper div.story-card {
+        flex-flow: column wrap; }
+        section.storybox-container div.storybox-wrapper div.story-card div.story-img,
+        section.storybox-container div.storybox-wrapper div.story-card div.story-block {
+          width: 100%; } }
+    @media only screen and (min-width: 768px) and (max-width: 2000px) {
+      section.storybox-container div.storybox-wrapper div.story-card {
+        flex-flow: row wrap; }
+        section.storybox-container div.storybox-wrapper div.story-card:nth-child(2) {
+          flex-direction: row-reverse; }
+        section.storybox-container div.storybox-wrapper div.story-card div.story-img,
+        section.storybox-container div.storybox-wrapper div.story-card div.story-block {
+          padding: 2em 2em;
+          width: 50%; } }
+
+#preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  background: #333 url("//cdnjs.cloudflare.com/ajax/libs/file-uploader/3.7.0/processing.gif") no-repeat center center; }
+
+/*
+    @include responsive_tab(){
+        
+    }
+
+
+    @include responsive(350,1200){
+        @content
+    }
+*/
+div.cover-container {
+  background-image: url("https://images.unsplash.com/photo-1530825894095-9c184b068fcb?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1953&q=80"), linear-gradient(#00000075, #00000075);
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+  background-size: cover; }
+  div.cover-container div.hero-box {
+    width: max-content;
+    text-align: center;
+    color: #bfbfbf;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    @media only screen and (max-width: 576) {
+      div.cover-container div.hero-box h1.hero-title {
+        font-size: 3.5em; }
+      div.cover-container div.hero-box h3 {
+        font-size: 1.8em; } }
+    @media only screen and (max-width: 767px) {
+      div.cover-container div.hero-box h1.hero-title {
+        font-size: 2em; }
+      div.cover-container div.hero-box h3 {
+        font-size: 1.2em; } }
