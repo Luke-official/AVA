@@ -1,24 +1,33 @@
 section.storybox-container {
-  padding: 2em;
+  padding: 2em 1rem;
+
+  h2{
+    text-align: center;
+    font-size: 2.4rem;
+  }
 
   div.storybox-wrapper {
     display: flex;
     flex-flow: column;
-    padding: 1.5em;
+    padding: 1.5rem 0;
+    
 
     div.story-card{
       width: 100%;
-        padding: 1em;
-        display: flex;
-        border-radius: 5px;
+      padding: 1em;
+      margin: 1.2rem 0;
+      display: flex;
+      border-radius: 5px;
+      box-shadow: 0 8px 16px #0000005e;
 
         div.story-img,
         div.story-block {
           height: 50%;
+          padding: .5rem;
         }
 
         &:nth-child(odd){
-            background-color: #023b87;
+            background-color:$primary_blue;
             color: $primary_white;
         }
 

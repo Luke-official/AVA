@@ -26,18 +26,19 @@ $(window).on('resize', function() {
     windowWidth = $(window).width();
 });
 
-
 //Change background-color of navbar on collapse or scroll
 document.addEventListener("DOMContentLoaded", function () {
     var btnMenu = document.querySelectorAll('[data-target="#collapsedNav"]');
     var navbar = document.getElementById("nav");
+
+
   
     // If menu is opened nav change bg
     btnMenu[0].addEventListener("click", () => {
-      if ((navbar.style.backgroundColor = "transparent")) {
-        navbar.style.backgroundColor = "rgba(0, 0, 0, 0.50)";
+      if ((navbar.style.background = "transparent")) {
+        navbar.style.background= "linear-gradient(90deg, rgba(4,6,101,0.7876284302783614) 0%, rgba(69,137,252,0.7680205871411064) 100%)";
       } else {
-        navbar.style.backgroundColor = "transparent";
+        navbar.style.background = "transparent";
       }
     });
   
@@ -47,9 +48,9 @@ document.addEventListener("DOMContentLoaded", function () {
       var scrolled = window.scrollY; // Take Y value of user scroll 
   
       if (scrolled >= startchange) {
-        navbar.style.backgroundColor = "rgba(0, 0, 0, 0.50)";
+        navbar.style.background = "linear-gradient(90deg, rgba(4,6,101,0.7876284302783614) 0%, rgba(69,137,252,0.7680205871411064) 100%)";
       } else {
-        navbar.style.backgroundColor = "transparent";
+        navbar.style.background = "transparent";
       }
     });
   });
@@ -63,3 +64,4 @@ function myFunction() {
   var scrolled = (winScroll / height) * 100;
   document.getElementById("myBar").style.width = scrolled + "%";
 } 
+

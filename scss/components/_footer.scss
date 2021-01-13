@@ -2,22 +2,30 @@ footer{
     background-color: #071165;
     padding: 1em .8em;
     color: $primary_white;
-    div.row{
+    width: 100%;
 
-        div{
+    div.footer-wrapper{
+        display: flex;
+        flex-flow: row wrap;
+        margin: auto;
+
+        div.col-lg{
+            justify-content: center;
+            align-items: center;
             
-            p.lead{
-                color: $primary_white;
-            }
+            div.footer-brand{
 
-            a.navbar-brand{
-
+                a.navbar-brand{
+                margin: auto;
                 
-                img{
-                    width: 60px;
-                    height: 60px;
+                    img{
+                        width: 60px;
+                        height: 60px;
+                    }
                 }
-            }
+
+           }
+            
         }
     }
 }

@@ -1,0 +1,33 @@
+section.cerbellvm-container{
+    padding: 3rem 0;
+    text-align: center;
+
+    h2.title{
+        font-size: 2rem;
+
+    }
+
+    div.cerbellvm-wrapper{
+            height: 40vh;
+            margin: auto;
+            box-shadow: 0 8px 16px #0000005e;
+            background-image: url("https://images.unsplash.com/photo-1559757175-0eb30cd8c063?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80"),
+            linear-gradient(90deg, rgba(15,15,194,1) 0%, rgba(195,70,252,1) 100%);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-blend-mode: overlay;
+            background-attachment: fixed;
+            background-size: cover;
+
+        div.cerbellvm-box{
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+    }
+
+
+}

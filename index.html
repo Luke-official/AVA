@@ -36,7 +36,7 @@
     <header>
       <nav id="nav" class="navbar navbar-expand-md fixed-top">
         <div class="container">
-          <a class="navbar-brand" href="#">
+          <a id="logo" class="navbar-brand" href="index.html">
             <img src="./img/AVA-logo.png" alt="" />
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsedNav"
@@ -92,14 +92,14 @@
   <main class="">
     
     <section id="more" class="card-container px-4 py-3">
-      <div class="row w-100 justify-content-center py-4">
-        <h2>Mission</h2>
+      <div class="row justify-content-center py-4">
+        <h2 class="title">Mission</h2>
       </div>
 
       <div class="card-deck">
 
-        <div class="card mission-card mb-3">
-          <div class="card-header ">Header</div>
+        <div class="card mission-card">
+          <div class="card-header "><i class="fas fa-rocket fa-2x"></i></div>
           <div class="card-body">
             <h5 class="card-title">Primary card title</h5>
             <p class="card-text">
@@ -109,8 +109,8 @@
           </div>
         </div>
 
-        <div class="card mission-card mb-3">
-          <div class="card-header">Header</div>
+        <div class="card mission-card">
+          <div class="card-header"><i class="fas fa-rocket fa-2x"></i></div>
           <div class="card-body">
             <h5 class="card-title">Primary card title</h5>
             <p class="card-text">
@@ -120,8 +120,8 @@
           </div>
         </div>
 
-        <div class="card mission-card mb-3">
-          <div class="card-header">Header</div>
+        <div class="card mission-card">
+          <div class="card-header"><i class="fas fa-rocket fa-2x"></i></div>
           <div class="card-body">
             <h5 class="card-title">Primary card title</h5>
             <p class="card-text">
@@ -134,40 +134,19 @@
 
     </section>
 
-    <section class="storybox-container p-4">
+    <section class="storybox-container">
       <div class="storybox-title">
-        <h2 class="text-center">Storytelling Title</h2>
+        <h2 class="title">Storytelling Title</h2>
       </div>
 
       <div class="storybox-wrapper">
-    
+  
         <div class="story-card">
-          <div class="story-img"
-            data-aos="zoom-out-down" 
-            data-aos-offset="300"
-            data-aos-duration="500">
+          <div class="story-img">
             <img style="width: 100%;"
-              src="https://images.unsplash.com/photo-1610129142564-79956dcecc7b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
-              alt="">
-          </div>
-          <div class="story-block">
-            <div class="box-header">
-              <h2 class="story-title">Heading</h2>
-            </div>
-            <div class="box-body">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio aspernatur, reprehenderit animi quibusdam
-              obcaecati doloribus sunt enim maiores quo dicta adipisci eum harum id incidunt numquam. Expedita nam delectus
-              quisquam?
-            </div>
-          </div>
-        </div>
-    
-        <div class="story-card">
-          <div class="story-img" 
             data-aos="zoom-out-down" 
-            data-aos-offset="300"
-            data-aos-duration="500">
-            <img style="width: 100%;"
+            data-aos-offset="100"
+            data-aos-duration="500"
               src="https://images.unsplash.com/photo-1610129142564-79956dcecc7b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
               alt="">
           </div>
@@ -184,11 +163,11 @@
         </div>
   
         <div class="story-card">
-          <div class="story-img"
-            data-aos="zoom-out-down" 
-            data-aos-offset="300"
-            data-aos-duration="500">
+          <div class="story-img">
             <img style="width: 100%;"
+                data-aos="fade-right" 
+                data-aos-offset="100"
+                data-aos-duration="500"
               src="https://images.unsplash.com/photo-1610129142564-79956dcecc7b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
               alt="">
           </div>
@@ -203,27 +182,60 @@
             </div>
           </div>
         </div>
-
+ 
+        <div class="story-card">
+          <div class="story-img">
+            <img style="width: 100%;"
+            data-aos="zoom-out-down" 
+            data-aos-offset="300"
+            data-aos-duration="500"
+              src="https://images.unsplash.com/photo-1610129142564-79956dcecc7b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+              alt="">
+          </div>
+          <div class="story-block">
+            <div class="box-header">
+              <h2>Heading</h2>
+            </div>
+            <div class="box-body">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio aspernatur, reprehenderit animi quibusdam
+              obcaecati doloribus sunt enim maiores quo dicta adipisci eum harum id incidunt numquam. Expedita nam delectus
+              quisquam?
+            </div>
+          </div>
+        </div>
+ 
       </div>
     </section>
 
     <section class="prototype-container w-100 p-4">
-      <h2 class="prototype-title text-center mb-3">
+      <h2 class="title">
         Prototype Title
       </h2>
       <div class="prototype-wrapper bg-primary vh-100">
-        <h3 class="text-center">3D Model Needed</h3>
+        <h3 class="title">3D Model Needed</h3>
         <div class="prototype-box">
 
         </div>
       </div>
     </section>
 
-    <section class="cerbellvm-cta p-4">
-      <div class="row w-100">
-        <h2>How we reached this ?</h2>
+    <section class="tours-container">
+      
+    </section>
+
+    <section class="cerbellvm-container">
+      <div class="">
+        <h2 class="title">Come abbiamo fatto?</h2>
       </div>
-      <div class="cerbellvm-wrapper"></div>
+      <div class="cerbellvm-wrapper">
+        <div class="cerbellvm-box text-center">
+          <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
     </section>
 
 
@@ -231,11 +243,11 @@
   </main>
 
 
-  <footer class="w-100">
-    <div class="row w-100">
+  <footer>
+    <div class="footer-wrapper">
       <div class="col-lg justify-content-center align-content-center">
         <div class="footer-brand">
-          <a href="#home" class="navbar-brand">
+          <a href="#logo" class="navbar-brand">
             <img src="img/AVA-logo.png" alt="" />
           </a>
           <small class="d-block mb-3 text-muted">

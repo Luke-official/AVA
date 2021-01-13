@@ -18,7 +18,8 @@ html {
 
 body {
   font-family: 'Quicksand', sans-serif !important;
-  background-color: #bfbfbf; }
+  background-color: #bfbfbf;
+  overflow-x: hidden; }
 
 *:focus {
   outline: none; }
@@ -34,15 +35,21 @@ body {
     }
 */
 nav.navbar {
-  font-size: 20px;
+  font-size: 22px;
   color: #fff;
   background-color: transparent;
-  font-weight: 500; }
+  font-weight: 550; }
   nav.navbar a {
     color: #fff; }
     nav.navbar a.navbar-brand img {
       height: 60px;
       width: 60px; }
+  nav.navbar div.dropdown-menu {
+    background-color: transparent;
+    box-shadow: 0 8px 16px #00000069;
+    border: 1px solid transparent; }
+    nav.navbar div.dropdown-menu a {
+      text-align: center; }
   nav.navbar .navbar-toggler {
     padding: 0; }
   nav.navbar button.navbar-toggler:focus {
@@ -88,16 +95,24 @@ nav.navbar {
 footer {
   background-color: #071165;
   padding: 1em .8em;
-  color: #bfbfbf; }
-  footer div.row div p.lead {
-    color: #bfbfbf; }
-  footer div.row div a.navbar-brand img {
-    width: 60px;
-    height: 60px; }
+  color: #bfbfbf;
+  width: 100%; }
+  footer div.footer-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    margin: auto; }
+    footer div.footer-wrapper div.col-lg {
+      justify-content: center;
+      align-items: center; }
+      footer div.footer-wrapper div.col-lg div.footer-brand a.navbar-brand {
+        margin: auto; }
+        footer div.footer-wrapper div.col-lg div.footer-brand a.navbar-brand img {
+          width: 60px;
+          height: 60px; }
 
 section.card-container div.card.mission-card {
   margin-right: 15px;
-  margin-bottom: 0;
+  margin-bottom: 2rem;
   margin-left: 15px;
   border: none; }
   section.card-container div.card.mission-card div.card-header {
@@ -113,8 +128,22 @@ section.card-container div.card.mission-card {
     section.card-container div.card.mission-card div.card-body:hover {
       box-shadow: 0 8px 16px #0000002e; }
 
-.story-title {
+/*
+    @include responsive_tab(){
+        
+    }
+
+
+    @include responsive(350,1200){
+        @content
+    }
+*/
+.serif-title {
   font-family: 'Merriweather', sans-serif; }
+
+h2.title {
+  text-align: center;
+  font-weight: 550; }
 
 /*
     @include responsive_tab(){
@@ -127,21 +156,27 @@ section.card-container div.card.mission-card {
     }
 */
 section.storybox-container {
-  padding: 2em; }
+  padding: 2em 1rem; }
+  section.storybox-container h2 {
+    text-align: center;
+    font-size: 2.4rem; }
   section.storybox-container div.storybox-wrapper {
     display: flex;
     flex-flow: column;
-    padding: 1.5em; }
+    padding: 1.5rem 0; }
     section.storybox-container div.storybox-wrapper div.story-card {
       width: 100%;
       padding: 1em;
+      margin: 1.2rem 0;
       display: flex;
-      border-radius: 5px; }
+      border-radius: 5px;
+      box-shadow: 0 8px 16px #0000005e; }
       section.storybox-container div.storybox-wrapper div.story-card div.story-img,
       section.storybox-container div.storybox-wrapper div.story-card div.story-block {
-        height: 50%; }
+        height: 50%;
+        padding: .5rem; }
       section.storybox-container div.storybox-wrapper div.story-card:nth-child(odd) {
-        background-color: #023b87;
+        background-color: #0072bb;
         color: #bfbfbf; }
     @media only screen and (max-width: 767px) {
       section.storybox-container div.storybox-wrapper div.story-card {
@@ -168,6 +203,27 @@ section.storybox-container {
   height: 100%;
   overflow: visible;
   background: #333 url("//cdnjs.cloudflare.com/ajax/libs/file-uploader/3.7.0/processing.gif") no-repeat center center; }
+
+section.cerbellvm-container {
+  padding: 3rem 0;
+  text-align: center; }
+  section.cerbellvm-container h2.title {
+    font-size: 2rem; }
+  section.cerbellvm-container div.cerbellvm-wrapper {
+    height: 40vh;
+    margin: auto;
+    box-shadow: 0 8px 16px #0000005e;
+    background-image: url("https://images.unsplash.com/photo-1559757175-0eb30cd8c063?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80"), linear-gradient(90deg, #0f0fc2 0%, #c346fc 100%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+    background-size: cover; }
+    section.cerbellvm-container div.cerbellvm-wrapper div.cerbellvm-box {
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      align-items: center; }
 
 /*
     @include responsive_tab(){
