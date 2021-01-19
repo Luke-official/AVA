@@ -155,6 +155,78 @@ h2.title {
         @content
     }
 */
+section.tours-container {
+  padding: 2em 1rem; }
+  section.tours-container div.section-title {
+    height: 40vh;
+    margin: auto;
+    box-shadow: 0 8px 16px #0000005e;
+    background-image: url("https://images.unsplash.com/photo-1517219039361-66f283bce5db?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1491&q=80"), linear-gradient(90deg, rgba(27, 27, 37, 0.651) 0%, rgba(0, 0, 0, 0.473) 100%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 1.5rem 0; }
+  section.tours-container div.tours-wrapper {
+    background-color: #0072bb;
+    box-shadow: 0 8px 16px #0000005e;
+    border-radius: 6px; }
+    section.tours-container div.tours-wrapper div.section-title {
+      color: #fff;
+      text-align: center;
+      padding: 2rem;
+      border-radius: 5px;
+      background-color: #0072bb;
+      box-shadow: 0 8px 16px #0000005e; }
+    section.tours-container div.tours-wrapper .tours-title {
+      padding: 2rem; }
+    section.tours-container div.tours-wrapper div.tours-group {
+      padding: 2rem;
+      border-radius: 5px; }
+      section.tours-container div.tours-wrapper div.tours-group div.col-md-4 {
+        padding: 0 2.5rem; }
+        section.tours-container div.tours-wrapper div.tours-group div.col-md-4 div.card {
+          position: relative;
+          border: none;
+          margin-bottom: 30px;
+          border-radius: 6px;
+          background: #fff;
+          box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 8px 16px #0000005e; }
+          @media only screen and (max-width: 767px) {
+            section.tours-container div.tours-wrapper div.tours-group div.col-md-4 div.card {
+              margin-bottom: 60px; } }
+          section.tours-container div.tours-wrapper div.tours-group div.col-md-4 div.card div.card-image {
+            height: 60%;
+            position: relative;
+            overflow: hidden;
+            margin-left: 15px;
+            margin-right: 15px;
+            margin-top: -30px;
+            border-radius: 6px;
+            box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2); }
+            section.tours-container div.tours-wrapper div.tours-group div.col-md-4 div.card div.card-image img {
+              width: 100%;
+              height: 50vh;
+              pointer-events: none;
+              border-radius: 6px; }
+            section.tours-container div.tours-wrapper div.tours-group div.col-md-4 div.card div.card-image div.card-caption {
+              display: none;
+              position: absolute;
+              bottom: 40%;
+              left: 35%;
+              text-align: center;
+              width: 100px;
+              /* Need a specific value to work */
+              color: #110101;
+              font-size: 1.3em;
+              text-shadow: 0 2px 5px rgba(33, 33, 33, 0.5); }
+              section.tours-container div.tours-wrapper div.tours-group div.col-md-4 div.card div.card-image div.card-caption:hover {
+                display: block;
+                color: #fff; }
+
 section.storybox-container {
   padding: 2em 1rem; }
   section.storybox-container h2 {
