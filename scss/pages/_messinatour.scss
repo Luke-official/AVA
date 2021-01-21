@@ -1,0 +1,84 @@
+section.messinatour-container{
+
+    div.messinatour-model{
+        margin: 2rem;
+        border: 2px solid $primary_blue;
+        height: 70vh;
+    }
+
+    div.tour-group{
+        
+        div.row{
+            justify-content: space-around;
+
+            div.tour-block{
+                width: min-content;
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: center;
+
+                span{
+
+                    img{
+                        
+                        height: 200px;
+                        width: 200px;
+                        border-radius: 50%;
+                        box-shadow: 0 8px 16px #000000b4;
+ 
+                    }
+
+                }
+
+                div.tour-header{
+                    width: 100%;
+                    padding: .5rem 1.5rem;
+                    border-radius: 6px;
+                    box-shadow: 0 8px 16px #000000b4;
+                    background-color: $primary_blue;
+                    margin-top: 1em;
+                    font-size: 1.2em;
+                    color: $total_white;
+                    font-weight: 550;
+
+
+                }
+
+                div.tour-body{
+                    margin-top: 1.5rem;
+                    width: fit-content;
+                    
+                }
+
+            }
+
+            
+        }
+    }
+
+    div.fulltour{
+        position: relative;
+        padding: 4rem;
+        margin-bottom: 2rem;
+
+        div.card{
+            height: fit-content;
+            width: 100%;
+            margin: auto;
+
+            
+
+                img{
+                    height: 35vh;
+                    width: 100%;
+                }
+
+        }
+
+    }
+
+
+
+
+} 
+

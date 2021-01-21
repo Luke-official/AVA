@@ -1,8 +1,19 @@
 //Initialize AOS animation
 AOS.init();
 
+/*
+function(event) {
+  var $anchor = $(this);
+  $('html, body').stop().animate({
+    scrollTop: $($anchor.attr('href')).offset().top - 0
+  }, 1500, 'easeInOutExpo');
+  event.preventDefault();
+}
+*/
+
+
 //Smooth scrolling when a#more is clicked
-document.querySelectorAll('a[href^="#more"]').forEach(anchor => {
+document.querySelectorAll('a[href^="#more"]','a[href^="#experiences"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
       e.preventDefault();
 
@@ -11,6 +22,7 @@ document.querySelectorAll('a[href^="#more"]').forEach(anchor => {
       });
   });
 });
+
 
 //Prevent background image from resize on scrolling
 var breakpoint = 991;
@@ -48,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
       var scrolled = window.scrollY; // Take Y value of user scroll 
   
       if (scrolled >= startchange) {
-        navbar.style.background = "linear-gradient(90deg, rgba(4,6,101,0.7876284302783614) 0%, rgba(69,137,252,0.7680205871411064) 100%)";
+        navbar.style.background = "linear-gradient(90deg, rgba(4, 4, 46, 0.94) 0%, rgba(2, 27, 68, 0.94) 100%)";
       } else {
         navbar.style.background = "transparent";
       }
