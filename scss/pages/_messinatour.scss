@@ -17,7 +17,7 @@ section.messinatour-container{
                 flex-flow: column nowrap;
                 justify-content: center;
                 align-items: center;
-                margin-top: 2rem;
+                margin-top: 2.5rem;
 
                 @media screen and (max-width: 767px){
                     width: 80%;
@@ -74,9 +74,14 @@ section.messinatour-container{
 
     div.tour-fulltour{
         position: relative;
-        padding: 4rem;
+        padding: 2rem;
         margin: 1rem auto;
         width: 70%;
+
+        @media screen and (max-width: 767px){
+            width: 100%;
+
+        }
 
         div.card{
             height: fit-content;

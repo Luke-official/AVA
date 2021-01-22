@@ -366,7 +366,7 @@ section.messinatour-container div.tour-group div.row {
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    margin-top: 2rem; }
+    margin-top: 2.5rem; }
     @media screen and (max-width: 767px) {
       section.messinatour-container div.tour-group div.row div.tour-block {
         width: 80%;
@@ -398,9 +398,12 @@ section.messinatour-container div.tour-group div.row {
 
 section.messinatour-container div.tour-fulltour {
   position: relative;
-  padding: 4rem;
+  padding: 2rem;
   margin: 1rem auto;
   width: 70%; }
+  @media screen and (max-width: 767px) {
+    section.messinatour-container div.tour-fulltour {
+      width: 100%; } }
   section.messinatour-container div.tour-fulltour div.card {
     height: fit-content;
     width: 100%;
