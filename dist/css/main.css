@@ -361,10 +361,16 @@ section.messinatour-container div.messinatour-model {
 section.messinatour-container div.tour-group div.row {
   justify-content: space-around; }
   section.messinatour-container div.tour-group div.row div.tour-block {
-    width: min-content;
+    width: 20%;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: center; }
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem; }
+    @media screen and (max-width: 767px) {
+      section.messinatour-container div.tour-group div.row div.tour-block {
+        width: 80%;
+        align-items: center; } }
     section.messinatour-container div.tour-group div.row div.tour-block span img {
       height: 200px;
       width: 200px;
@@ -372,26 +378,35 @@ section.messinatour-container div.tour-group div.row {
       box-shadow: 0 8px 16px #000000b4; }
     section.messinatour-container div.tour-group div.row div.tour-block div.tour-header {
       width: 100%;
-      padding: .5rem 1.5rem;
+      padding: .5rem 1rem;
       border-radius: 6px;
       box-shadow: 0 8px 16px #000000b4;
       background-color: #0072bb;
-      margin-top: 1em;
-      font-size: 1.2em;
+      margin: 1.5rem 0;
+      font-size: 1.6em;
       color: #fff;
       font-weight: 550; }
     section.messinatour-container div.tour-group div.row div.tour-block div.tour-body {
-      margin-top: 1.5rem;
+      padding: 0 .8rem;
       width: fit-content; }
+    section.messinatour-container div.tour-group div.row div.tour-block div.tour-footer {
+      width: 100%;
+      padding: 0 .8rem;
+      font-size: 1.2em;
+      color: #1d1d1d;
+      font-weight: 550; }
 
-section.messinatour-container div.fulltour {
+section.messinatour-container div.tour-fulltour {
   position: relative;
   padding: 4rem;
-  margin-bottom: 2rem; }
-  section.messinatour-container div.fulltour div.card {
+  margin: 1rem auto;
+  width: 70%; }
+  section.messinatour-container div.tour-fulltour div.card {
     height: fit-content;
     width: 100%;
-    margin: auto; }
-    section.messinatour-container div.fulltour div.card img {
+    margin: auto;
+    border-radius: 6px;
+    box-shadow: 0 8px 16px #0000008f; }
+    section.messinatour-container div.tour-fulltour div.card img {
       height: 35vh;
       width: 100%; }

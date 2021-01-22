@@ -12,10 +12,18 @@ section.messinatour-container{
             justify-content: space-around;
 
             div.tour-block{
-                width: min-content;
+                width: 20%;
                 display: flex;
                 flex-flow: column nowrap;
                 justify-content: center;
+                align-items: center;
+                margin-top: 2rem;
+
+                @media screen and (max-width: 767px){
+                    width: 80%;
+                    align-items: center;
+
+                }
 
                 span{
 
@@ -32,12 +40,12 @@ section.messinatour-container{
 
                 div.tour-header{
                     width: 100%;
-                    padding: .5rem 1.5rem;
+                    padding: .5rem 1rem;
                     border-radius: 6px;
                     box-shadow: 0 8px 16px #000000b4;
                     background-color: $primary_blue;
-                    margin-top: 1em;
-                    font-size: 1.2em;
+                    margin: 1.5rem 0;
+                    font-size: 1.6em;
                     color: $total_white;
                     font-weight: 550;
 
@@ -45,9 +53,17 @@ section.messinatour-container{
                 }
 
                 div.tour-body{
-                    margin-top: 1.5rem;
+                    padding: 0 .8rem;
                     width: fit-content;
                     
+                }
+
+                div.tour-footer{
+                    width: 100%;
+                    padding: 0 .8rem;
+                    font-size: 1.2em;
+                    color: #1d1d1d;
+                    font-weight: 550;
                 }
 
             }
@@ -56,15 +72,18 @@ section.messinatour-container{
         }
     }
 
-    div.fulltour{
+    div.tour-fulltour{
         position: relative;
         padding: 4rem;
-        margin-bottom: 2rem;
+        margin: 1rem auto;
+        width: 70%;
 
         div.card{
             height: fit-content;
             width: 100%;
             margin: auto;
+            border-radius: 6px;
+            box-shadow: 0 8px 16px #0000008f;
 
             
 
