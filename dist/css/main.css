@@ -18,7 +18,7 @@ html {
 
 body {
   font-family: 'Quicksand', sans-serif !important;
-  background-color: #bfbfbf;
+  background-color: #eeeeee;
   overflow-x: hidden; }
 
 *:focus {
@@ -95,7 +95,7 @@ nav.navbar {
 footer {
   background-color: #071165;
   padding: 1em .8em;
-  color: #bfbfbf;
+  color: #eeeeee;
   width: 100%; }
   footer div.footer-wrapper {
     display: flex;
@@ -115,9 +115,16 @@ section.card-container div.card.mission-card {
   margin-bottom: 2rem;
   margin-left: 15px;
   border: none; }
+  section.card-container div.card.mission-card h5.card-title {
+    font-size: 24px;
+    font-weight: 550; }
+  section.card-container div.card.mission-card p.card-text {
+    color: #0072bb;
+    font-size: 18px;
+    font-weight: 400; }
   section.card-container div.card.mission-card div.card-header {
     background-color: #0072bb;
-    color: #bfbfbf;
+    color: #eeeeee;
     text-align: center;
     margin-bottom: 1.5rem;
     box-shadow: 0 8px 16px #00000052;
@@ -125,6 +132,9 @@ section.card-container div.card.mission-card {
   section.card-container div.card.mission-card div.card-body {
     transition: box-shadow 0.2s linear;
     border-radius: 5px; }
+    @media screen and (min-width: 768px) {
+      section.card-container div.card.mission-card div.card-body {
+        font-size: 20px; } }
     section.card-container div.card.mission-card div.card-body:hover {
       box-shadow: 0 8px 16px #0000002e; }
 
@@ -189,6 +199,9 @@ section.tours-container {
       border-radius: 5px; }
       section.tours-container div.tours-wrapper div.tours-group div.col-md-4 {
         padding: 0 2.5rem; }
+        @media screen and (max-width: 767px) {
+          section.tours-container div.tours-wrapper div.tours-group div.col-md-4 {
+            padding: 0 0; } }
         section.tours-container div.tours-wrapper div.tours-group div.col-md-4 div.card {
           position: relative;
           border: none;
@@ -232,40 +245,86 @@ section.storybox-container {
   padding: 2em 1rem; }
   section.storybox-container h2 {
     text-align: center;
+    margin-bottom: 2rem;
     font-size: 2.4rem; }
+    @media screen and (max-width: 567px) {
+      section.storybox-container h2 {
+        font-size: 26px;
+        margin-bottom: 0; } }
   section.storybox-container div.storybox-wrapper {
     display: flex;
     flex-flow: column;
     padding: 1.5rem 0; }
+    section.storybox-container div.storybox-wrapper div.story-img,
+    section.storybox-container div.storybox-wrapper div.story-block {
+      height: 50%;
+      padding: .5rem; }
     section.storybox-container div.storybox-wrapper div.story-card {
+      color: #fff;
+      font-size: 18px;
       width: 100%;
       padding: 1em;
       margin: 1.2rem 0;
       display: flex;
       border-radius: 5px;
       box-shadow: 0 8px 16px #0000005e; }
-      section.storybox-container div.storybox-wrapper div.story-card div.story-img,
-      section.storybox-container div.storybox-wrapper div.story-card div.story-block {
-        height: 50%;
-        padding: .5rem; }
+      section.storybox-container div.storybox-wrapper div.story-card div.box-header {
+        margin-bottom: 2rem; }
+        section.storybox-container div.storybox-wrapper div.story-card div.box-header h3 {
+          color: #0072bb;
+          font-weight: 600;
+          font-size: 26px; }
+      section.storybox-container div.storybox-wrapper div.story-card div.box-body {
+        color: #0072bb;
+        font-size: 18px; }
+      section.storybox-container div.storybox-wrapper div.story-card div.box-footer {
+        padding: 0.7rem;
+        background-color: #0072bb;
+        color: #0072bb;
+        text-align: center;
+        margin-top: 1.5rem;
+        border-radius: 5px;
+        font-size: 20px; }
+        @media screen and (max-width: 767px) {
+          section.storybox-container div.storybox-wrapper div.story-card div.box-footer {
+            font-size: 18px;
+            padding: .4rem; } }
+        section.storybox-container div.storybox-wrapper div.story-card div.box-footer:hover {
+          box-shadow: 0 8px 16px #0000002e; }
+        section.storybox-container div.storybox-wrapper div.story-card div.box-footer a {
+          color: #eeeeee;
+          font-weight: 600; }
       section.storybox-container div.storybox-wrapper div.story-card:nth-child(odd) {
         background-color: #0072bb;
-        color: #bfbfbf; }
-    @media only screen and (max-width: 767px) {
-      section.storybox-container div.storybox-wrapper div.story-card {
-        flex-flow: column wrap; }
-        section.storybox-container div.storybox-wrapper div.story-card div.story-img,
-        section.storybox-container div.storybox-wrapper div.story-card div.story-block {
-          width: 100%; } }
-    @media only screen and (min-width: 768px) and (max-width: 2000px) {
-      section.storybox-container div.storybox-wrapper div.story-card {
-        flex-flow: row wrap; }
-        section.storybox-container div.storybox-wrapper div.story-card:nth-child(2) {
-          flex-direction: row-reverse; }
-        section.storybox-container div.storybox-wrapper div.story-card div.story-img,
-        section.storybox-container div.storybox-wrapper div.story-card div.story-block {
-          padding: 2em 2em;
-          width: 50%; } }
+        color: #eeeeee; }
+        section.storybox-container div.storybox-wrapper div.story-card:nth-child(odd) div.box-body,
+        section.storybox-container div.storybox-wrapper div.story-card:nth-child(odd) div.box-footer {
+          color: #eeeeee; }
+        section.storybox-container div.storybox-wrapper div.story-card:nth-child(odd) .box-header {
+          color: #eeeeee;
+          font-weight: 600; }
+          section.storybox-container div.storybox-wrapper div.story-card:nth-child(odd) .box-header h3 {
+            color: #eeeeee; }
+        section.storybox-container div.storybox-wrapper div.story-card:nth-child(odd) div.box-footer {
+          background-color: #eeeeee; }
+          section.storybox-container div.storybox-wrapper div.story-card:nth-child(odd) div.box-footer a {
+            color: #0072bb;
+            font-weight: 600; }
+  @media only screen and (max-width: 767px) {
+    section.storybox-container div.story-card {
+      flex-flow: column wrap; }
+      section.storybox-container div.story-card div.story-img,
+      section.storybox-container div.story-card div.story-block {
+        width: 100%; } }
+  @media only screen and (min-width: 768px) and (max-width: 2000px) {
+    section.storybox-container div.story-card {
+      flex-flow: row wrap; }
+      section.storybox-container div.story-card:nth-child(2) {
+        flex-direction: row-reverse; }
+      section.storybox-container div.story-card div.story-img,
+      section.storybox-container div.story-card div.story-block {
+        padding: 2em 2em;
+        width: 50%; } }
 
 #preloader {
   position: fixed;
@@ -331,7 +390,7 @@ div.cover-container.messina-tour {
 div.cover-container div.hero-box {
   width: 100%;
   text-align: center;
-  color: #bfbfbf;
+  color: #eeeeee;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -340,7 +399,7 @@ div.cover-container div.hero-box {
     width: 100%;
     margin-top: 3em;
     text-decoration: none;
-    color: #bfbfbf;
+    color: #eeeeee;
     font-size: 1.4rem; }
   @media only screen and (max-width: 576) {
     div.cover-container div.hero-box h1.hero-title {

@@ -1,67 +1,160 @@
+$article-font: 18px;
+$p-1: .7rem;
+
+
 section.storybox-container {
   padding: 2em 1rem;
 
-  h2{
-    text-align: center;
-    font-size: 2.4rem;
-  }
+    h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 2.4rem;
 
-  div.storybox-wrapper {
-    display: flex;
-    flex-flow: column;
-    padding: 1.5rem 0;
-    
+      @media screen and (max-width: 567px){
+        font-size: 26px;
+        margin-bottom: 0;
+        
+      }
+    }
 
-    div.story-card{
-      width: 100%;
-      padding: 1em;
-      margin: 1.2rem 0;
+    div.storybox-wrapper {
       display: flex;
-      border-radius: 5px;
-      box-shadow: 0 8px 16px #0000005e;
+      flex-flow: column;
+      padding: 1.5rem 0;
 
-        div.story-img,
-        div.story-block {
-          height: 50%;
-          padding: .5rem;
-        }
-
-        &:nth-child(odd){
-            background-color:$primary_blue;
-            color: $primary_white;
-        }
-
-    }
-
-    
-
-    @include responsive_tab() {
-      div.story-card {
-        flex-flow: column wrap;
-
-        div.story-img,
-        div.story-block {
-          width: 100%;
-        }
+      div.story-img,
+      div.story-block {
+        height: 50%;
+        padding: .5rem;
       }
-    }
 
-    @include responsive(768px,2000px) {
+
       div.story-card {
-        flex-flow: row wrap;
+        color: $total_white;
+        font-size: $font-18;
+        width: 100%;
+        padding: 1em;
+        margin: 1.2rem 0;
+        display: flex;
+        border-radius: 5px;
+        box-shadow: 0 8px 16px #0000005e;
 
-        &:nth-child(2) {
-          flex-direction: row-reverse;
+        div.box-header{
+          margin-bottom: 2rem;
+
+          h3{
+            color: $primary_blue;
+            font-weight: $font-w-600;
+            font-size: $font-18 + 8;
+          }
+          
         }
 
-        div.story-img,
-        div.story-block {
-          padding: 2em 2em;
-          width: 50%;
+        div.box-body {
+          color: $primary_blue;
+          font-size: $font-18;
         }
-      }
+      
+
+        div.box-footer {
+          padding: $p-1;
+          background-color: $primary_blue;
+          color: $primary_blue;
+          text-align: center;
+          margin-top: 1.5rem;
+          border-radius: 5px;
+          font-size: $font-18 + 2px;
+
+          @media screen and (max-width:767px){
+            font-size: $font-18;
+            padding: .4rem;
+          }
+
+          &:hover{
+            box-shadow: 0 8px 16px #0000002e;
+          }
+
+          a{
+            color: $card_white;
+            font-weight: $font-w-600;
+          }
+
+
+
+        }
+
+        &:nth-child(odd) {
+          background-color: $primary_blue;
+          color: $card_white;
+  
+          div.box-body,
+          div.box-footer{
+            color: $card_white;
+          }
+
+          
+
+          .box-header{
+            color: $card_white;
+            font-weight: $font-w-600;
+
+            h3{
+              color: $card_white;
+            }
+            
+          }
+
+          div.box-footer{
+              background-color: $card_white;
+              a{
+                color: $primary_blue;
+                font-weight: $font-w-600;
+              }
+              
+          }
+  
+          
+        }
+
+
+
+
+      
+
+
     }
 
-    
   }
+
+
+
+
+  @include responsive_tab() {
+    div.story-card {
+      flex-flow: column wrap;
+
+      div.story-img,
+      div.story-block {
+        width: 100%;
+      }
+    }
+  }
+
+  @include responsive(768px, 2000px) {
+    div.story-card {
+      flex-flow: row wrap;
+
+      &:nth-child(2) {
+        flex-direction: row-reverse;
+      }
+
+      div.story-img,
+      div.story-block {
+        padding: 2em 2em;
+        width: 50%;
+      }
+    }
+  }
+
+
 }

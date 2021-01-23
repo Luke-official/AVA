@@ -54,8 +54,11 @@ section.tours-container{
 
 
           div.col-md-4{
-              
               padding: 0 2.5rem;
+
+              @media screen and (max-width: 767px){
+                  padding: 0 0;
+              }
 
             div.card{
                 
