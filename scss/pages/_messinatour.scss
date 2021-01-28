@@ -1,10 +1,16 @@
-section.messinatour-container{
+section.citytour-container{
 
-    div.messinatour-model{
+    div.citytour-model{
         margin: 2rem;
         border: 2px solid $primary_blue;
         height: 70vh;
     }
+
+   div.city-story{
+       margin: 0 2rem;
+       font-weight: 450;
+       font-size: $font-20;
+   }
 
     div.tour-group{
         
@@ -15,7 +21,7 @@ section.messinatour-container{
                 width: 20%;
                 display: flex;
                 flex-flow: column nowrap;
-                justify-content: center;
+                justify-content: baseline;
                 align-items: center;
                 margin-top: 2.5rem;
 
@@ -45,7 +51,7 @@ section.messinatour-container{
                     box-shadow: 0 8px 16px #000000b4;
                     background-color: $primary_blue;
                     margin: 1.5rem 0;
-                    font-size: 1.6em;
+                    font-size: 1.3em;
                     color: $total_white;
                     font-weight: 550;
 

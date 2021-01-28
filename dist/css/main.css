@@ -155,6 +155,82 @@ h2.title {
   text-align: center;
   font-weight: 550; }
 
+div#staticBackdrop.modal.fade {
+  padding-right: 0; }
+  div#staticBackdrop.modal.fade div.modal-dialog {
+    color: #eeeeee; }
+    @media (min-width: 576px) {
+      div#staticBackdrop.modal.fade div.modal-dialog {
+        max-width: 767px;
+        margin: 1.75rem auto; } }
+    div#staticBackdrop.modal.fade div.modal-dialog div.modal-header button span {
+      color: #fff; }
+      div#staticBackdrop.modal.fade div.modal-dialog div.modal-header button span:hover {
+        color: red; }
+    div#staticBackdrop.modal.fade div.modal-dialog div.modal-content {
+      background-color: #000000b9; }
+    div#staticBackdrop.modal.fade div.modal-dialog div.modal-body {
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 1rem; }
+      div#staticBackdrop.modal.fade div.modal-dialog div.modal-body .modal-video {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        padding-top: 56.25%;
+        /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */ }
+        div#staticBackdrop.modal.fade div.modal-dialog div.modal-body .modal-video iframe {
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          width: 100%;
+          height: 100%; }
+  div#staticBackdrop.modal.fade form {
+    margin: 1rem 0;
+    text-align: left; }
+
+section.slideshow-container {
+  padding: 2rem;
+  margin-bottom: 2rem; }
+  @media (max-width: 576px) {
+    section.slideshow-container {
+      padding: 1rem; } }
+  section.slideshow-container .slideshow-text {
+    padding: .2rem 1rem;
+    font-size: 18px; }
+  section.slideshow-container .slideshow-wrapper {
+    background-color: #0072bb;
+    border-radius: 6px;
+    box-shadow: 0 8px 16px #0000005e;
+    padding: 1rem;
+    margin: auto;
+    width: 100%;
+    height: 50%; }
+    @media (min-width: 576px) {
+      section.slideshow-container .slideshow-wrapper {
+        max-width: calc(100% - 0vw); } }
+    @media (min-width: 767px) {
+      section.slideshow-container .slideshow-wrapper {
+        max-width: calc(100% - 30vw); } }
+    @media (min-width: 992px) {
+      section.slideshow-container .slideshow-wrapper {
+        padding: .8rem;
+        max-width: calc(100% - 35rem); } }
+    @media (min-width: 1200px) {
+      section.slideshow-container .slideshow-wrapper {
+        max-width: calc(100% - 40vw);
+        padding: .8rem; } }
+    section.slideshow-container .slideshow-wrapper .carousel-inner {
+      position: relative;
+      margin: auto;
+      width: fit-content; }
+
 /*
     @include responsive_tab(){
         
@@ -194,6 +270,9 @@ section.tours-container {
       box-shadow: 0 8px 16px #0000005e; }
     section.tours-container div.tours-wrapper .tours-title {
       padding: 2rem; }
+      section.tours-container div.tours-wrapper .tours-title h3 {
+        color: #eeeeee;
+        font-weight: 600; }
     section.tours-container div.tours-wrapper div.tours-group {
       padding: 2rem;
       border-radius: 5px; }
@@ -369,7 +448,7 @@ section.cerbellvm-container {
 */
 div.cover-container.home-page {
   background-image: url("https://images.unsplash.com/photo-1530825894095-9c184b068fcb?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1953&q=80"), linear-gradient(#00000075, #00000075);
-  height: 100vh;
+  height: 80vh !important;
   background-position: center;
   background-repeat: no-repeat;
   background-blend-mode: overlay;
@@ -378,7 +457,7 @@ div.cover-container.home-page {
   z-index: -10; }
 
 div.cover-container.messina-tour {
-  background-image: url("../../img/DSC00685.JPG"), linear-gradient(#00000075, #00000075);
+  background-image: url("../../img/tours_messinahome.jpg"), linear-gradient(#00000075, #00000075);
   height: 80vh !important;
   background-position: center;
   background-repeat: no-repeat;
@@ -412,63 +491,68 @@ div.cover-container div.hero-box {
     div.cover-container div.hero-box h3 {
       font-size: 1.2em; } }
 
-section.messinatour-container div.messinatour-model {
+section.citytour-container div.citytour-model {
   margin: 2rem;
   border: 2px solid #0072bb;
   height: 70vh; }
 
-section.messinatour-container div.tour-group div.row {
+section.citytour-container div.city-story {
+  margin: 0 2rem;
+  font-weight: 450;
+  font-size: 20px; }
+
+section.citytour-container div.tour-group div.row {
   justify-content: space-around; }
-  section.messinatour-container div.tour-group div.row div.tour-block {
+  section.citytour-container div.tour-group div.row div.tour-block {
     width: 20%;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: center;
+    justify-content: baseline;
     align-items: center;
     margin-top: 2.5rem; }
     @media screen and (max-width: 767px) {
-      section.messinatour-container div.tour-group div.row div.tour-block {
+      section.citytour-container div.tour-group div.row div.tour-block {
         width: 80%;
         align-items: center; } }
-    section.messinatour-container div.tour-group div.row div.tour-block span img {
+    section.citytour-container div.tour-group div.row div.tour-block span img {
       height: 200px;
       width: 200px;
       border-radius: 50%;
       box-shadow: 0 8px 16px #000000b4; }
-    section.messinatour-container div.tour-group div.row div.tour-block div.tour-header {
+    section.citytour-container div.tour-group div.row div.tour-block div.tour-header {
       width: 100%;
       padding: .5rem 1rem;
       border-radius: 6px;
       box-shadow: 0 8px 16px #000000b4;
       background-color: #0072bb;
       margin: 1.5rem 0;
-      font-size: 1.6em;
+      font-size: 1.3em;
       color: #fff;
       font-weight: 550; }
-    section.messinatour-container div.tour-group div.row div.tour-block div.tour-body {
+    section.citytour-container div.tour-group div.row div.tour-block div.tour-body {
       padding: 0 .8rem;
       width: fit-content; }
-    section.messinatour-container div.tour-group div.row div.tour-block div.tour-footer {
+    section.citytour-container div.tour-group div.row div.tour-block div.tour-footer {
       width: 100%;
       padding: 0 .8rem;
       font-size: 1.2em;
       color: #1d1d1d;
       font-weight: 550; }
 
-section.messinatour-container div.tour-fulltour {
+section.citytour-container div.tour-fulltour {
   position: relative;
   padding: 2rem;
   margin: 1rem auto;
   width: 70%; }
   @media screen and (max-width: 767px) {
-    section.messinatour-container div.tour-fulltour {
+    section.citytour-container div.tour-fulltour {
       width: 100%; } }
-  section.messinatour-container div.tour-fulltour div.card {
+  section.citytour-container div.tour-fulltour div.card {
     height: fit-content;
     width: 100%;
     margin: auto;
     border-radius: 6px;
     box-shadow: 0 8px 16px #0000008f; }
-    section.messinatour-container div.tour-fulltour div.card img {
+    section.citytour-container div.tour-fulltour div.card img {
       height: 35vh;
       width: 100%; }

@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // If menu is opened nav change bg
     btnMenu[0].addEventListener("click", () => {
       if ((navbar.style.background = "transparent")) {
-        navbar.style.background= "linear-gradient(90deg, rgba(4,6,101,0.7876284302783614) 0%, rgba(69,137,252,0.7680205871411064) 100%)";
+        navbar.style.background= "linear-gradient(90deg, rgba(4, 4, 46, 0.94) 0%, rgba(2, 27, 68, 0.94) 100%)";
       } else {
         navbar.style.background = "transparent";
       }
@@ -67,13 +67,27 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // When the user scrolls the page, execute myFunction
-window.onscroll = function() {myFunction()};
 
-function myFunction() {
-  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  var scrolled = (winScroll / height) * 100;
-  document.getElementById("myBar").style.width = scrolled + "%";
-} 
+
+const formModalSendBtn = document.getElementById('submit-form');
+formModalSendBtn.addEventListener('click', validateForm());
+
+function validateForm (){
+  let field = document.getElementsByClassName('form-control');
+
+  field.addEventListener('input', () => {
+
+    let value = field.value;
+    let trimmed = value.trim()
+    
+    if (trimmed == "") {
+      field.classList.add("is-valid");
+    } else {
+      field.classList.add("is-invalid");
+    }
+    console.log(trimmed)
+
+  });
+}
+
 
