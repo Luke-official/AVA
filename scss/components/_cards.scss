@@ -1,47 +1,397 @@
-section.card-container {
+section.mission-section {
+  padding: 2rem 2.5rem;
 
-    div.card.mission-card {
-      margin-right: 15px;
-      margin-bottom: 2rem;
-      margin-left: 15px;
-      border: none;
+ 
+  .title-row{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem 0;
 
-      h5.card-title{
-        font-size: $font-24;
-        font-weight: $font-w-550;
-      }
+  }
 
-      p.card-text{
-        color: $primary_blue;
-        font-size: $font-18;
-        font-weight: 400;
-      }
-      
+  div.card.mission-card {
+    margin-right: 15px;
+    margin-bottom: 2rem;
+    margin-left: 15px;
+    border: none;
 
-        div.card-header, %card-header {
-            background-color: $primary_blue;
-            color: $primary_white;
-            text-align: center;
-            margin-bottom: 1.5rem;
-            box-shadow: 0 8px 16px #00000052;
-            border-radius: 5px;
-        }
-
-        div.card-body {
-            transition: box-shadow 0.2s linear;
-            border-radius: 5px;
-
-            @media screen and (min-width: 768px){
-                font-size: $font-20;
-            }
-
-            &:hover {
-                box-shadow: 0 8px 16px #0000002e;
-            }
-        }
+    h5.card-title {
+      font-size: $font-24;
+      font-weight: $font-w-550;
     }
 
-      
+    p.card-text {
+
+      font-size: $font-18;
+      font-weight: 400;
+    }
+
+
+    div.card-header,
+    %card-header {
+
+      text-align: center;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 8px 16px #00000052;
+      border-radius: 5px;
+    }
+
+    div.card-body {
+      transition: box-shadow 0.2s linear;
+      border-radius: 5px;
+
+      @media screen and (min-width: 768px) {
+        font-size: $font-20;
+      }
+
+      &:hover {
+        box-shadow: 0 8px 16px #0000002e;
+      }
+    }
+  }
+
+
 }
 
 
+svg.house {
+  .st0 {
+    fill: transparent;
+  }
+
+  .st1 {
+    fill: #EEF2F4;
+  }
+
+  .st2 {
+    opacity: 0.32;
+    fill: #FFFFFF;
+  }
+
+  .st3 {
+    fill: #EA633A;
+  }
+
+  .st4 {
+    fill: #D85335;
+  }
+
+  .st5 {
+    fill: #CE4829;
+    stroke: #CE4829;
+    stroke-width: 6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+  }
+
+  .st6 {
+    fill: none;
+    stroke: #1C1A34;
+    stroke-width: 6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+  }
+
+  .st7 {
+    fill: #EC1E39;
+  }
+
+  .st8 {
+    fill: #F22F50;
+  }
+
+  .st9 {
+    fill: #DD1738;
+  }
+
+  .st10 {
+    opacity: 0.82;
+    fill: #C91B38;
+  }
+
+  .st11 {
+    fill: #1C1931;
+  }
+
+  .st12 {
+    fill: #272544;
+  }
+
+  .st13 {
+    fill: #282642;
+  }
+
+  .st14 {
+    fill: #71B8BC;
+  }
+
+  .st15 {
+    opacity: 0.62;
+    fill: #D0F6FB;
+  }
+
+  .st16 {
+    fill: #D14D2F;
+    stroke: #CE4829;
+    stroke-width: 6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+  }
+
+  .st17 {
+    fill: #656B82;
+  }
+
+  .st18 {
+    fill: #1FBE6A;
+  }
+
+  .st19 {
+    fill: #2CDF78;
+  }
+
+  .st20 {
+    fill: #2BCCA0;
+  }
+
+  .st21 {
+    fill: #21AA7F;
+  }
+
+  .st22 {
+    fill: #FF9839;
+  }
+
+  .st23 {
+    fill: #ED852F;
+  }
+
+  .st24 {
+    fill: #99393E;
+  }
+
+  .st25 {
+    fill: #822E36;
+  }
+
+  .st26 {
+    fill: #89C6CC;
+  }
+
+  .st27 {
+    opacity: 0.92;
+    fill: #D0F6FB;
+  }
+
+  .st28 {
+    fill: #EA633A;
+    stroke: #EA633A;
+    stroke-width: 6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+  }
+
+  .st29 {
+    fill: #98AAB5;
+  }
+
+  .st30 {
+    fill: #7B929E;
+  }
+
+  .st31 {
+    fill: #6E818E;
+  }
+
+  .st32 {
+    fill: #5C6F7A;
+  }
+
+  .st33 {
+    fill: none;
+    stroke: #1C1A34;
+    stroke-width: 8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+  }
+
+  .st34 {
+    fill: #FF4B53;
+  }
+
+  .st35 {
+    fill: #EA3F54;
+  }
+
+  .st36 {
+    fill: #663333;
+  }
+
+}
+
+svg.tech {
+  .st0 {
+    fill: transparent;
+  }
+
+  .st1 {
+    fill: #EEF2F4;
+  }
+
+  .st2 {
+    opacity: 0.5;
+    fill: #232323;
+    stroke: #232323;
+    stroke-width: 8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+    enable-background: new;
+  }
+
+  .st3 {
+    fill: #43597A;
+  }
+
+  .st4 {
+    opacity: 0.7;
+    fill: #6A87AD;
+  }
+
+  .st5 {
+    fill: #394E6B;
+  }
+
+  .st6 {
+    fill: none;
+    stroke: #202454;
+    stroke-width: 8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+  }
+
+  .st7 {
+    fill: #2F3F56;
+  }
+
+  .st8 {
+    fill: none;
+    stroke: #283356;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+  }
+
+  .st9 {
+    opacity: 0.8;
+  }
+
+  .st10 {
+    opacity: 0.8;
+    fill: #B4C7E7;
+    enable-background: new;
+  }
+
+  .st11 {
+    fill: none;
+    stroke: #22293F;
+    stroke-width: 6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+  }
+
+  .st12 {
+    fill: none;
+    stroke: #202454;
+    stroke-width: 5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+  }
+
+  .st13 {
+    fill: none;
+    stroke: #707A99;
+    stroke-width: 3;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+  }
+
+  .st14 {
+    opacity: 0.4;
+  }
+
+  .st15 {
+    fill: #232323;
+    stroke: #232323;
+    stroke-width: 8.0001;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10.0001;
+  }
+
+  .st16 {
+    fill: #232323;
+    stroke: #232323;
+    stroke-width: 8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+  }
+
+  .st17 {
+    fill: none;
+    stroke: #232323;
+    stroke-width: 8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+  }
+
+  .st18 {
+    opacity: 0.5;
+    fill: #6A87AD;
+  }
+
+  .st19 {
+    fill: none;
+    stroke: #202454;
+    stroke-width: 8.0001;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10.0001;
+  }
+
+  .st20 {
+    fill: #6A87AD;
+  }
+
+  .st21 {
+    fill: #334665;
+  }
+
+  .st22 {
+    opacity: 0.4;
+    fill: #43597A;
+    enable-background: new;
+  }
+
+  .st23 {
+    fill: #81A0C1;
+  }
+
+  .st24 {
+    fill: #E2E9F2;
+  }
+
+}

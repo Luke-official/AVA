@@ -1,13 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+.bold {
+  font-weight: 600; }
+
 /*
 	Theme Name: Ava Template
 	Description: AVA Design
 	Author: Luke_Official.dev
 	Author URI: https://lukeofficial.dev/
 */
-@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+.bold {
+  font-weight: 600; }
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -45,9 +51,7 @@ nav.navbar {
       height: 60px;
       width: 60px; }
   nav.navbar div.dropdown-menu {
-    background-color: transparent;
-    box-shadow: 0 8px 16px #00000069;
-    border: 1px solid transparent; }
+    background: rgba(0, 0, 0, 0) linear-gradient(90deg, rgba(4, 4, 46, 0.94) 0%, rgba(2, 27, 68, 0.94) 100%) repeat scroll 0% 0%; }
     nav.navbar div.dropdown-menu a {
       text-align: center; }
   nav.navbar .navbar-toggler {
@@ -110,33 +114,312 @@ footer {
           width: 60px;
           height: 60px; }
 
-section.card-container div.card.mission-card {
-  margin-right: 15px;
-  margin-bottom: 2rem;
-  margin-left: 15px;
-  border: none; }
-  section.card-container div.card.mission-card h5.card-title {
-    font-size: 24px;
-    font-weight: 550; }
-  section.card-container div.card.mission-card p.card-text {
-    color: #0072bb;
-    font-size: 18px;
-    font-weight: 400; }
-  section.card-container div.card.mission-card div.card-header {
-    background-color: #0072bb;
-    color: #eeeeee;
-    text-align: center;
-    margin-bottom: 1.5rem;
-    box-shadow: 0 8px 16px #00000052;
-    border-radius: 5px; }
-  section.card-container div.card.mission-card div.card-body {
-    transition: box-shadow 0.2s linear;
-    border-radius: 5px; }
-    @media screen and (min-width: 768px) {
-      section.card-container div.card.mission-card div.card-body {
-        font-size: 20px; } }
-    section.card-container div.card.mission-card div.card-body:hover {
-      box-shadow: 0 8px 16px #0000002e; }
+section.mission-section {
+  padding: 2rem 2.5rem; }
+  section.mission-section .title-row {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem 0; }
+    section.mission-section .title-row .bold {
+      font-weight: 600; }
+  section.mission-section div.card.mission-card {
+    margin-right: 15px;
+    margin-bottom: 2rem;
+    margin-left: 15px;
+    border: none; }
+    section.mission-section div.card.mission-card h5.card-title {
+      font-size: 24px;
+      font-weight: 550; }
+    section.mission-section div.card.mission-card p.card-text {
+      font-size: 18px;
+      font-weight: 400; }
+    section.mission-section div.card.mission-card div.card-header {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 8px 16px #00000052;
+      border-radius: 5px; }
+    section.mission-section div.card.mission-card div.card-body {
+      transition: box-shadow 0.2s linear;
+      border-radius: 5px; }
+      @media screen and (min-width: 768px) {
+        section.mission-section div.card.mission-card div.card-body {
+          font-size: 20px; } }
+      section.mission-section div.card.mission-card div.card-body:hover {
+        box-shadow: 0 8px 16px #0000002e; }
+
+svg.house .st0 {
+  fill: transparent; }
+
+svg.house .st1 {
+  fill: #EEF2F4; }
+
+svg.house .st2 {
+  opacity: 0.32;
+  fill: #FFFFFF; }
+
+svg.house .st3 {
+  fill: #EA633A; }
+
+svg.house .st4 {
+  fill: #D85335; }
+
+svg.house .st5 {
+  fill: #CE4829;
+  stroke: #CE4829;
+  stroke-width: 6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10; }
+
+svg.house .st6 {
+  fill: none;
+  stroke: #1C1A34;
+  stroke-width: 6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10; }
+
+svg.house .st7 {
+  fill: #EC1E39; }
+
+svg.house .st8 {
+  fill: #F22F50; }
+
+svg.house .st9 {
+  fill: #DD1738; }
+
+svg.house .st10 {
+  opacity: 0.82;
+  fill: #C91B38; }
+
+svg.house .st11 {
+  fill: #1C1931; }
+
+svg.house .st12 {
+  fill: #272544; }
+
+svg.house .st13 {
+  fill: #282642; }
+
+svg.house .st14 {
+  fill: #71B8BC; }
+
+svg.house .st15 {
+  opacity: 0.62;
+  fill: #D0F6FB; }
+
+svg.house .st16 {
+  fill: #D14D2F;
+  stroke: #CE4829;
+  stroke-width: 6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10; }
+
+svg.house .st17 {
+  fill: #656B82; }
+
+svg.house .st18 {
+  fill: #1FBE6A; }
+
+svg.house .st19 {
+  fill: #2CDF78; }
+
+svg.house .st20 {
+  fill: #2BCCA0; }
+
+svg.house .st21 {
+  fill: #21AA7F; }
+
+svg.house .st22 {
+  fill: #FF9839; }
+
+svg.house .st23 {
+  fill: #ED852F; }
+
+svg.house .st24 {
+  fill: #99393E; }
+
+svg.house .st25 {
+  fill: #822E36; }
+
+svg.house .st26 {
+  fill: #89C6CC; }
+
+svg.house .st27 {
+  opacity: 0.92;
+  fill: #D0F6FB; }
+
+svg.house .st28 {
+  fill: #EA633A;
+  stroke: #EA633A;
+  stroke-width: 6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10; }
+
+svg.house .st29 {
+  fill: #98AAB5; }
+
+svg.house .st30 {
+  fill: #7B929E; }
+
+svg.house .st31 {
+  fill: #6E818E; }
+
+svg.house .st32 {
+  fill: #5C6F7A; }
+
+svg.house .st33 {
+  fill: none;
+  stroke: #1C1A34;
+  stroke-width: 8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10; }
+
+svg.house .st34 {
+  fill: #FF4B53; }
+
+svg.house .st35 {
+  fill: #EA3F54; }
+
+svg.house .st36 {
+  fill: #663333; }
+
+svg.tech .st0 {
+  fill: transparent; }
+
+svg.tech .st1 {
+  fill: #EEF2F4; }
+
+svg.tech .st2 {
+  opacity: 0.5;
+  fill: #232323;
+  stroke: #232323;
+  stroke-width: 8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+  enable-background: new; }
+
+svg.tech .st3 {
+  fill: #43597A; }
+
+svg.tech .st4 {
+  opacity: 0.7;
+  fill: #6A87AD; }
+
+svg.tech .st5 {
+  fill: #394E6B; }
+
+svg.tech .st6 {
+  fill: none;
+  stroke: #202454;
+  stroke-width: 8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10; }
+
+svg.tech .st7 {
+  fill: #2F3F56; }
+
+svg.tech .st8 {
+  fill: none;
+  stroke: #283356;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10; }
+
+svg.tech .st9 {
+  opacity: 0.8; }
+
+svg.tech .st10 {
+  opacity: 0.8;
+  fill: #B4C7E7;
+  enable-background: new; }
+
+svg.tech .st11 {
+  fill: none;
+  stroke: #22293F;
+  stroke-width: 6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10; }
+
+svg.tech .st12 {
+  fill: none;
+  stroke: #202454;
+  stroke-width: 5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10; }
+
+svg.tech .st13 {
+  fill: none;
+  stroke: #707A99;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10; }
+
+svg.tech .st14 {
+  opacity: 0.4; }
+
+svg.tech .st15 {
+  fill: #232323;
+  stroke: #232323;
+  stroke-width: 8.0001;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10.0001; }
+
+svg.tech .st16 {
+  fill: #232323;
+  stroke: #232323;
+  stroke-width: 8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10; }
+
+svg.tech .st17 {
+  fill: none;
+  stroke: #232323;
+  stroke-width: 8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10; }
+
+svg.tech .st18 {
+  opacity: 0.5;
+  fill: #6A87AD; }
+
+svg.tech .st19 {
+  fill: none;
+  stroke: #202454;
+  stroke-width: 8.0001;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10.0001; }
+
+svg.tech .st20 {
+  fill: #6A87AD; }
+
+svg.tech .st21 {
+  fill: #334665; }
+
+svg.tech .st22 {
+  opacity: 0.4;
+  fill: #43597A;
+  enable-background: new; }
+
+svg.tech .st23 {
+  fill: #81A0C1; }
+
+svg.tech .st24 {
+  fill: #E2E9F2; }
 
 /*
     @include responsive_tab(){
