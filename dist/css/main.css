@@ -1,9 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
-.bold {
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600&display=swap");
+.franceus, .title {
+  font-family: 'Fraunces', serif; }
+
+.bold, .colored, .title, section.storybox-container div.storybox-wrapper div.story-card div.box-body {
   font-weight: 600; }
+
+.colored {
+  color: #0072bb; }
+
+.title {
+  text-align: center;
+  font-size: calc(22px + 8 * ( (100vw - 420px) / 480)); }
+  @media screen and (max-width: 420px) {
+    .title {
+      font-size: 22px; } }
+  @media screen and (min-width: 900px) {
+    .title {
+      font-size: 30px; } }
 
 /*
 	Theme Name: Ava Template
@@ -11,16 +29,40 @@
 	Author: Luke_Official.dev
 	Author URI: https://lukeofficial.dev/
 */
-.bold {
+.franceus, .title {
+  font-family: 'Fraunces', serif; }
+
+.bold, .colored, .title, section.storybox-container div.storybox-wrapper div.story-card div.box-body {
   font-weight: 600; }
+
+.colored {
+  color: #0072bb; }
+
+.title {
+  text-align: center;
+  font-size: calc(22px + 8 * ( (100vw - 420px) / 480)); }
+  @media screen and (max-width: 420px) {
+    .title {
+      font-size: 22px; } }
+  @media screen and (min-width: 900px) {
+    .title {
+      font-size: 30px; } }
 
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  user-select: none; }
 
 html {
+  font-size: calc(16px + 2 * ( (100vw - 420px) / 480));
   font-size: 1em; }
+  @media screen and (max-width: 420px) {
+    html {
+      font-size: 16px; } }
+  @media screen and (min-width: 900px) {
+    html {
+      font-size: 18px; } }
 
 body {
   font-family: 'Quicksand', sans-serif !important;
@@ -115,16 +157,22 @@ footer {
           height: 60px; }
 
 section.mission-section {
-  padding: 2rem 2.5rem; }
-  section.mission-section .title-row {
+  padding: 2rem 2.5rem;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center; }
+  section.mission-section .card-deck {
+    max-width: 70%;
     display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-    padding: 2.5rem 0; }
-    section.mission-section .title-row .bold {
-      font-weight: 600; }
+    flex-flow: row wrap;
+    justify-content: space-between; }
+    @media screen and (max-width: 567px) {
+      section.mission-section .card-deck {
+        flex-direction: column;
+        max-width: 100%; } }
   section.mission-section div.card.mission-card {
+    text-align: center;
     margin-right: 15px;
     margin-bottom: 2rem;
     margin-left: 15px;
@@ -141,13 +189,22 @@ section.mission-section {
       box-shadow: 0 8px 16px #00000052;
       border-radius: 5px; }
     section.mission-section div.card.mission-card div.card-body {
+      margin: auto;
+      max-width: 300px;
       transition: box-shadow 0.2s linear;
-      border-radius: 5px; }
+      border-radius: 8px; }
       @media screen and (min-width: 768px) {
         section.mission-section div.card.mission-card div.card-body {
           font-size: 20px; } }
       section.mission-section div.card.mission-card div.card-body:hover {
         box-shadow: 0 8px 16px #0000002e; }
+
+.title-row {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2.5rem 0; }
 
 svg.house .st0 {
   fill: transparent; }
@@ -488,10 +545,9 @@ section.slideshow-container {
     padding: .2rem 1rem;
     font-size: 18px; }
   section.slideshow-container .slideshow-wrapper {
-    background-color: #0072bb;
+    background-color: #0072bba8;
     border-radius: 6px;
     box-shadow: 0 8px 16px #0000005e;
-    padding: 1rem;
     margin: auto;
     width: 100%;
     height: 50%; }
@@ -541,7 +597,7 @@ section.tours-container {
     padding: 1.5rem 0;
     border-radius: 6px; }
   section.tours-container div.tours-wrapper {
-    background-color: #0072bb;
+    background-color: #0072bba8;
     box-shadow: 0 8px 16px #0000005e;
     border-radius: 6px; }
     section.tours-container div.tours-wrapper div.section-title {
@@ -605,14 +661,6 @@ section.tours-container {
 
 section.storybox-container {
   padding: 2em 1rem; }
-  section.storybox-container h2 {
-    text-align: center;
-    margin-bottom: 2rem;
-    font-size: 2.4rem; }
-    @media screen and (max-width: 567px) {
-      section.storybox-container h2 {
-        font-size: 26px;
-        margin-bottom: 0; } }
   section.storybox-container div.storybox-wrapper {
     display: flex;
     flex-flow: column;
@@ -623,7 +671,6 @@ section.storybox-container {
       padding: .5rem; }
     section.storybox-container div.storybox-wrapper div.story-card {
       color: #fff;
-      font-size: 18px;
       width: 100%;
       padding: 1em;
       margin: 1.2rem 0;
@@ -633,23 +680,18 @@ section.storybox-container {
       section.storybox-container div.storybox-wrapper div.story-card div.box-header {
         margin-bottom: 2rem; }
         section.storybox-container div.storybox-wrapper div.story-card div.box-header h3 {
-          color: #0072bb;
-          font-weight: 600;
-          font-size: 26px; }
+          color: #0072bb; }
       section.storybox-container div.storybox-wrapper div.story-card div.box-body {
-        color: #0072bb;
-        font-size: 18px; }
+        color: #0072bb; }
       section.storybox-container div.storybox-wrapper div.story-card div.box-footer {
         padding: 0.7rem;
         background-color: #0072bb;
         color: #0072bb;
         text-align: center;
         margin-top: 1.5rem;
-        border-radius: 5px;
-        font-size: 20px; }
+        border-radius: 5px; }
         @media screen and (max-width: 767px) {
           section.storybox-container div.storybox-wrapper div.story-card div.box-footer {
-            font-size: 18px;
             padding: .4rem; } }
         section.storybox-container div.storybox-wrapper div.story-card div.box-footer:hover {
           box-shadow: 0 8px 16px #0000002e; }
@@ -657,7 +699,7 @@ section.storybox-container {
           color: #eeeeee;
           font-weight: 600; }
       section.storybox-container div.storybox-wrapper div.story-card:nth-child(odd) {
-        background-color: #0072bb;
+        background-color: #0072bba8;
         color: #eeeeee; }
         section.storybox-container div.storybox-wrapper div.story-card:nth-child(odd) div.box-body,
         section.storybox-container div.storybox-wrapper div.story-card:nth-child(odd) div.box-footer {
@@ -780,7 +822,8 @@ section.citytour-container div.citytour-model {
   height: 70vh; }
 
 section.citytour-container div.city-story {
-  margin: 0 2rem;
+  text-align: center;
+  margin: 0 1rem;
   font-weight: 450;
   font-size: 20px; }
 

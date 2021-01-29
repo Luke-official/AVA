@@ -1,17 +1,25 @@
 section.mission-section {
   padding: 2rem 2.5rem;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
 
- 
-  .title-row{
+  .card-deck{
+    max-width: 70%;
     display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-    padding: 2.5rem 0;
+    flex-flow: row wrap;
+    justify-content: space-between;
 
+    @media screen and (max-width: 567px){
+      flex-direction: column;
+      max-width: 100%;
+      
+    }
   }
 
   div.card.mission-card {
+    text-align: center;
     margin-right: 15px;
     margin-bottom: 2rem;
     margin-left: 15px;
@@ -39,8 +47,10 @@ section.mission-section {
     }
 
     div.card-body {
+      margin: auto;
+      max-width: 300px;
       transition: box-shadow 0.2s linear;
-      border-radius: 5px;
+      border-radius: 8px;
 
       @media screen and (min-width: 768px) {
         font-size: $font-20;
@@ -52,6 +62,15 @@ section.mission-section {
     }
   }
 
+
+}
+
+.title-row{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2.5rem 0;
 
 }
 

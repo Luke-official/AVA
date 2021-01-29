@@ -1,13 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600&display=swap');
 
 $font-20: 20px;
+$font-22: 22px;
 $font-24: 24px;
 $font-18: 18px;
+$font-16: 16px;
 
 $font-w-600: 600;
 $font-w-550: 550;
 
+@mixin fluid-type($min-font-size: 12px, $max-font-size: 21px, $lower-range: 420px, $upper-range: 900px) {
+    $font-16: 16px;
+    $font-18: 18px;
+    $font-20: 20px;
+    $font-22: 22px;
+    $font-24: 24px;
+    
+    font-size: calc(#{$min-font-size} + #{(($max-font-size / ($max-font-size * 0 + 1)) - ($min-font-size / ($min-font-size * 0 + 1)))} * ( (100vw - #{$lower-range}) / #{(($upper-range / ($upper-range * 0 + 1)) - ($lower-range / ($lower-range * 0 + 1)))}));
+    
+    @media screen and (max-width: $lower-range) {
+      font-size: $min-font-size;
+    }
+    @media screen and (min-width: $upper-range){
+      font-size: $max-font-size;
+    }
+  }
+
+.franceus{
+    font-family: 'Fraunces', serif;
+}
+
 .bold{
     font-weight: $font-w-600;
-  }
+}
+
+.colored{
+    @extend .bold;
+    color: $primary_blue;
+}
+
+.title{
+    text-align: center;
+    @extend .bold, .franceus;
+    @include fluid-type($font-22, 30px);
+}
+

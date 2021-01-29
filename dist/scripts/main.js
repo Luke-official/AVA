@@ -13,7 +13,7 @@ function(event) {
 
 
 //Smooth scrolling when a#more is clicked
-document.querySelectorAll('a[href^="#more"]','a[href^="#experiences"]').forEach(anchor => {
+document.querySelectorAll('a[href^="#more"] , a[href^="#experiences"] , a[href^="#tour"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
       e.preventDefault();
 

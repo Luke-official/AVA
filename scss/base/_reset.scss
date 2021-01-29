@@ -7,23 +7,26 @@
 
 @import 'base/fonts';
 
-
 *{
     box-sizing: border-box;
     margin: 0;
-	padding: 0;
+    padding: 0;
+    user-select: none;
 }
 
 html{
+    @include fluid-type($font-16, $font-18);
     font-size: 1em; //1 em = 10px
    
     
 }
 
 body{
+    
     font-family: 'Quicksand', sans-serif !important;
     background-color: $primary_white;
     overflow-x: hidden;
+    
     
 }
 
