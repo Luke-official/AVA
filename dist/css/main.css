@@ -581,12 +581,13 @@ section.slideshow-container {
     }
 */
 section.tours-container {
+  background-color: transparent;
   padding: 2em 1rem; }
   section.tours-container div.section-title {
     height: 40vh;
     margin: auto;
     box-shadow: 0 8px 16px #0000005e;
-    background-image: url("https://images.unsplash.com/photo-1517219039361-66f283bce5db?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1491&q=80"), linear-gradient(90deg, rgba(27, 27, 37, 0.651) 0%, rgba(0, 0, 0, 0.473) 100%);
+    background-image: url("https://images.unsplash.com/photo-1517219039361-66f283bce5db?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1491&q=80"), linear-gradient(90deg, rgba(45, 68, 67, 0.877) 0%, rgba(22, 67, 78, 0.795) 100%);
     background-position: center;
     background-repeat: no-repeat;
     background-blend-mode: overlay;
@@ -597,67 +598,97 @@ section.tours-container {
     padding: 1.5rem 0;
     border-radius: 6px; }
   section.tours-container div.tours-wrapper {
-    background-color: #0072bba8;
-    box-shadow: 0 8px 16px #0000005e;
     border-radius: 6px; }
     section.tours-container div.tours-wrapper div.section-title {
       color: #fff;
       text-align: center;
       padding: 2rem;
       border-radius: 5px;
-      background-color: #0072bb;
+      background-color: transparent;
       box-shadow: 0 8px 16px #0000005e; }
     section.tours-container div.tours-wrapper .tours-title {
       padding: 2rem; }
       section.tours-container div.tours-wrapper .tours-title h3 {
+        letter-spacing: 0.206em;
         color: #eeeeee;
         font-weight: 600; }
     section.tours-container div.tours-wrapper div.tours-group {
-      padding: 2rem;
+      padding: 2rem 2rem 8rem 2rem;
       border-radius: 5px; }
+      @media only screen and (max-width: 767px) {
+        section.tours-container div.tours-wrapper div.tours-group {
+          padding: 2rem 2rem 0 2rem; } }
+      section.tours-container div.tours-wrapper div.tours-group .row {
+        padding-bottom: 3rem; }
+        @media only screen and (max-width: 767px) {
+          section.tours-container div.tours-wrapper div.tours-group .row {
+            padding-bottom: 0; } }
       section.tours-container div.tours-wrapper div.tours-group div.col-md-4 {
+        background-color: transparent;
         padding: 0 2.5rem; }
         @media screen and (max-width: 767px) {
           section.tours-container div.tours-wrapper div.tours-group div.col-md-4 {
             padding: 0 0; } }
+        @media only screen and (max-width: 767px) {
+          section.tours-container div.tours-wrapper div.tours-group div.col-md-4 {
+            margin-bottom: 250px; } }
         section.tours-container div.tours-wrapper div.tours-group div.col-md-4 div.card {
+          height: 500px;
           position: relative;
           border: none;
           margin-bottom: 30px;
-          border-radius: 6px;
-          background: #fff;
-          box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 8px 16px #0000005e; }
-          @media only screen and (max-width: 767px) {
-            section.tours-container div.tours-wrapper div.tours-group div.col-md-4 div.card {
-              margin-bottom: 60px; } }
-          section.tours-container div.tours-wrapper div.tours-group div.col-md-4 div.card div.card-image {
-            height: 60%;
-            position: relative;
-            overflow: hidden;
-            margin-left: 15px;
-            margin-right: 15px;
-            margin-top: -30px;
-            border-radius: 6px;
-            box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2); }
-            section.tours-container div.tours-wrapper div.tours-group div.col-md-4 div.card div.card-image img {
-              width: 100%;
-              height: 50vh;
-              pointer-events: none;
-              border-radius: 6px; }
-            section.tours-container div.tours-wrapper div.tours-group div.col-md-4 div.card div.card-image div.card-caption {
-              display: none;
-              position: absolute;
-              bottom: 40%;
-              left: 35%;
-              text-align: center;
-              width: 100px;
-              /* Need a specific value to work */
-              color: #110101;
-              font-size: 1.3em;
-              text-shadow: 0 2px 5px rgba(33, 33, 33, 0.5); }
-              section.tours-container div.tours-wrapper div.tours-group div.col-md-4 div.card div.card-image div.card-caption:hover {
-                display: block;
-                color: #fff; }
+          border-radius: 10px;
+          background-repeat: no-repeat;
+          background-size: cover;
+          box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 8px 16px #00000075; }
+          section.tours-container div.tours-wrapper div.tours-group div.col-md-4 div.card.messina-card {
+            background-position: center left;
+            background-image: url("https://images.unsplash.com/photo-1586632713405-c87f340e41ae?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"), linear-gradient(#00000075, #00000075); }
+          section.tours-container div.tours-wrapper div.tours-group div.col-md-4 div.card.taormina-card {
+            background-position: center center;
+            background-image: url("https://images.unsplash.com/photo-1584892177649-00e6c26fd11d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80"), linear-gradient(#00000093, #000000b0); }
+          section.tours-container div.tours-wrapper div.tours-group div.col-md-4 div.card.palermo-card {
+            background-position: center center;
+            background-image: url("https://images.unsplash.com/photo-1584955198747-ddabcc3309f1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80"), linear-gradient(#000000e7, #00000075); }
+          section.tours-container div.tours-wrapper div.tours-group div.col-md-4 div.card .card-overlay {
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: space-between;
+            z-index: 100;
+            height: 100%;
+            border-radius: 10px;
+            background-color: #00000096;
+            color: #fff; }
+            section.tours-container div.tours-wrapper div.tours-group div.col-md-4 div.card .card-overlay .overlay-header {
+              display: flex;
+              justify-content: center;
+              align-items: baseline;
+              padding: 1.5rem 1rem; }
+              section.tours-container div.tours-wrapper div.tours-group div.col-md-4 div.card .card-overlay .overlay-header i {
+                font-size: 30px;
+                margin-right: .5rem; }
+            section.tours-container div.tours-wrapper div.tours-group div.col-md-4 div.card .card-overlay .overlay-body {
+              margin: 1rem 0;
+              padding: .8rem; }
+      section.tours-container div.tours-wrapper div.tours-group div.footer-card {
+        display: flex;
+        align-items: flex-end;
+        margin-top: -170px;
+        width: 100%;
+        height: 50%;
+        border-radius: 10px;
+        background-color: #fff;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 8px 16px #00000038; }
+        section.tours-container div.tours-wrapper div.tours-group div.footer-card div.buttons-row {
+          padding: .8rem 1rem;
+          width: 100%;
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: space-between;
+          align-items: center;
+          font-size: 22px !important; }
+          section.tours-container div.tours-wrapper div.tours-group div.footer-card div.buttons-row button a {
+            color: #fff; }
 
 section.storybox-container {
   padding: 2em 1rem; }

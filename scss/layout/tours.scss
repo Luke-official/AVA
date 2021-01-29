@@ -1,15 +1,15 @@
-section.tours-container{
-    
+section.tours-container {
+    background-color: transparent;
     padding: 2em 1rem;
-    
-    
 
-    div.section-title{
+
+
+    div.section-title {
         height: 40vh;
         margin: auto;
         box-shadow: 0 8px 16px #0000005e;
         background-image: url("https://images.unsplash.com/photo-1517219039361-66f283bce5db?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1491&q=80"),
-        linear-gradient(90deg, rgba(27, 27, 37, 0.651) 0%, rgba(0, 0, 0, 0.473) 100%);
+            linear-gradient(90deg, rgba(45, 68, 67, 0.877) 0%, rgba(22, 67, 78, 0.795) 100%);
         background-position: center;
         background-repeat: no-repeat;
         background-blend-mode: overlay;
@@ -20,121 +20,167 @@ section.tours-container{
         padding: 1.5rem 0;
         border-radius: 6px;
 
-       
-
-       
-
     }
 
-    div.tours-wrapper{
-        background-color: $secondary_blue;
-        box-shadow: 0 8px 16px #0000005e;
+    div.tours-wrapper {
         border-radius: 6px;
 
-        div.section-title{
-            color:$total_white;
+        div.section-title {
+            color: $total_white;
             text-align: center;
             padding: 2rem;
             border-radius: 5px;
-            background-color: $primary_blue;
+            background-color: transparent;
             box-shadow: 0 8px 16px #0000005e;
         }
 
-        .tours-title{
+        .tours-title {
             padding: 2rem;
-            h3{
+
+            h3 {
+                letter-spacing: 0.206em;
                 color: $card_white;
                 font-weight: 600;
             }
-            
-            
+
+
 
         }
-        
-        
-        div.tours-group{
-            
-    
-            padding: 2rem;
+
+
+        div.tours-group {
+            padding: 2rem 2rem 8rem 2rem;
             border-radius: 5px;
 
+            @include responsive_tab() {
+                padding: 2rem 2rem 0 2rem;
+            }
 
-          div.col-md-4{
-              padding: 0 2.5rem;
-
-              @media screen and (max-width: 767px){
-                  padding: 0 0;
-              }
-
-            div.card{
-                position: relative;
-                border:none;
-                margin-bottom: 30px;
-                border-radius: 6px;
-                background: #fff;
-                box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
-                0 3px 1px -2px rgba(0, 0, 0, 0.2), 
-                0 8px 16px #0000005e;
+            .row{
+                padding-bottom: 3rem;
 
                 @include responsive_tab() {
-                    margin-bottom: 60px;
-            
+                    padding-bottom: 0;
                 }
-
-                div.card-image{
-                    
-                    height: 60%;
-                    position: relative;
-                    overflow: hidden;
-                    margin-left: 15px;
-                    margin-right: 15px;
-                    margin-top: -30px;
-                    border-radius: 6px;
-                    box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
-                    
-
-                    img{
-                        width: 100%;
-                        height: 50vh;
-                        pointer-events: none;
-                        border-radius: 6px;
-                        
-                        &:hover{
-                            
-                        }
-                    }
-
-                    
-
-                    div.card-caption{
-                        display: none;
-                        position: absolute;
-                        bottom: 40%;
-                        left: 35%;
-                        text-align: center;
-                        width: 100px; /* Need a specific value to work */
-                        color: rgb(17, 1, 1);
-                        font-size: 1.3em;
-                        text-shadow: 0 2px 5px rgba(33, 33, 33, 0.5);
-
-                        &:hover {
-
-                    
-                            display: block;
-                            color: $total_white;
-                        }
-                    }
-
-                    
-
-                }
-
-                
 
             }
 
-          }  
-            
+
+            div.col-md-4 {
+                background-color: transparent;
+                padding: 0 2.5rem;
+
+                @media screen and (max-width: 767px) {
+                    padding: 0 0;
+                }
+
+                @include responsive_tab() {
+                    margin-bottom: 250px;
+                }
+
+                div.card {
+                    height: 500px;
+                    position: relative;
+                    border: none;
+                    margin-bottom: 30px;
+                    border-radius: 10px;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+                        0 3px 1px -2px rgba(0, 0, 0, 0.2),
+                        0 8px 16px #00000075;
+
+                    
+
+                    &.messina-card {
+                        background-position: center left;
+                        background-image: url("https://images.unsplash.com/photo-1586632713405-c87f340e41ae?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"),
+                            linear-gradient(#00000075, #00000075);
+                    }
+
+                    &.taormina-card {
+                        background-position: center center;
+                        background-image: url("https://images.unsplash.com/photo-1584892177649-00e6c26fd11d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80"),
+                            linear-gradient(#00000093, #000000b0);
+                    }
+
+                    &.palermo-card {
+                        background-position: center center;
+                        background-image: url("https://images.unsplash.com/photo-1584955198747-ddabcc3309f1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80"),
+                            linear-gradient(#000000e7, #00000075);
+                    }
+
+                    .card-overlay {
+                        display: flex;
+                        flex-flow: column nowrap;
+                        justify-content: space-between;
+                        z-index: 100;
+                        height: 100%;
+                        border-radius: 10px;
+                        background-color: #00000096;
+                        color: $total_white;
+                        
+                       .overlay-header{
+                            display: flex;
+                            justify-content: center;
+                            align-items: baseline;
+                            padding:1.5rem 1rem;
+
+                            i{
+                                font-size: 30px;
+                                margin-right: .5rem;
+                            }
+
+                       }
+
+                       .overlay-body{
+                            margin: 1rem 0;
+                            padding: .8rem;
+
+                       }
+
+                    }
+
+                }
+
+            }
+
+            div.footer-card {
+                display: flex;
+                align-items: flex-end;
+                margin-top: -170px;
+                width: 100%;
+                height: 50%;
+                border-radius: 10px;
+                background-color: $total_white;
+                box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+                    0 3px 1px -2px rgba(0, 0, 0, 0.2),
+                    0 8px 16px #00000038;
+
+                div.buttons-row {
+                    padding: .8rem 1rem;
+                    width: 100%;
+                    display: flex;
+                    flex-flow: row nowrap;
+                    justify-content: space-between;
+                    align-items: center;
+                    font-size: 22px !important;
+
+                    button {
+
+                        a {
+                            color: $total_white;
+                            
+                        }
+
+                    }
+
+                    
+                }
+
+            }
+
+
         }
     }
 }
