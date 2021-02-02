@@ -49,40 +49,65 @@ section.tours-container {
 
 
         div.tours-group {
-            padding: 2rem 2rem 8rem 2rem;
+            padding: 2rem 1rem 2rem 1rem;
             border-radius: 5px;
 
-            @include responsive_tab() {
-                padding: 2rem 2rem 0 2rem;
-            }
+            div.cards-row{
+                display: flex;
+                flex-flow: column nowrap;
 
-            .row{
-                padding-bottom: 3rem;
-
-                @include responsive_tab() {
-                    padding-bottom: 0;
-                }
-
-            }
-
-
-            div.col-md-4 {
-                background-color: transparent;
-                padding: 0 2.5rem;
-
-                @media screen and (max-width: 767px) {
-                    padding: 0 0;
-                }
-
-                @include responsive_tab() {
+                // Medium devices (tablets, 768px and up)
+                @media screen and (min-width: 768px) { 
+                    padding: 0 .5rem;
                     margin-bottom: 250px;
-                }
+                 }
 
+                // Large devices (desktops, 992px and up)
+                @media screen and (min-width: 992px) { 
+                    flex-flow: row;
+                    margin-bottom: 0;
+
+                 }
+
+                // Extra large devices (large desktops, 1200px and up)
+                @media screen and (min-width: 1200px) { 
+
+                 }
+
+
+            }
+
+
+            div.card-col {
+                position: relative;
+                width: 100%;
+                margin: 2rem 0 2rem 0;
+                background-color: transparent;
+                padding: 0 .5rem;
+
+                // Medium devices (tablets, 768px and up)
+                @media screen and (min-width: 768px) { 
+                    padding: 0 .5rem;
+                    margin-bottom: 250px;
+                 }
+
+                // Large devices (desktops, 992px and up)
+                @media screen and (min-width: 992px) {
+                    padding: 0 1.8rem;
+                    flex: 0 0 33.3333%;
+                 }
+
+                // Extra large devices (large desktops, 1200px and up)
+                @media screen and (min-width: 1200px) { 
+
+                 }
+
+                
                 div.card {
                     height: 500px;
                     position: relative;
                     border: none;
-                    margin-bottom: 30px;
+                    
                     border-radius: 10px;
                     background-repeat: no-repeat;
                     background-size: cover;
@@ -148,7 +173,7 @@ section.tours-container {
             div.footer-card {
                 display: flex;
                 align-items: flex-end;
-                margin-top: -170px;
+                
                 width: 100%;
                 height: 50%;
                 border-radius: 10px;
@@ -156,6 +181,28 @@ section.tours-container {
                 box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
                     0 3px 1px -2px rgba(0, 0, 0, 0.2),
                     0 8px 16px #00000038;
+
+                    @media screen and (min-width: 576px) { 
+                        padding: 1.5rem 0;
+                     }
+    
+                    // Medium devices (tablets, 768px and up)
+                    @media screen and (min-width: 768px) { 
+                        
+                     }
+    
+                    // Large devices (desktops, 992px and up)
+                    @media screen and (min-width: 992px) { 
+                        margin-top: -140px;
+                        padding:.6rem 0;
+                        
+                     }
+    
+                    // Extra large devices (large desktops, 1200px and up)
+                    @media screen and (min-width: 1200px) { 
+    
+                     }
+
 
                 div.buttons-row {
                     padding: .8rem 1rem;

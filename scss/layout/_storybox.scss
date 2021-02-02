@@ -4,111 +4,56 @@ $p-1: .7rem;
 
 section.storybox-container {
   padding: 2em 1rem;
+  font-size: $article-font;
 
-    div.storybox-wrapper {
+  div.storybox-wrapper {
+    display: flex;
+    flex-flow: column;
+    padding: 1.5rem 1.5rem 0 1.5rem;
+
+    div.story-img,
+    div.story-block {
+      height: 50%;
+      padding: .5rem;
+    }
+
+
+    div.story-card {
+      width: 100%;
+      padding: 1em;
+      margin: 1.2rem 0;
       display: flex;
-      flex-flow: column;
-      padding: 1.5rem 0;
+      border-radius: 5px;
+      
 
-      div.story-img,
-      div.story-block {
-        height: 50%;
-        padding: .5rem;
-      }
-
-
-      div.story-card {
-        color: $total_white;
-        
-        width: 100%;
-        padding: 1em;
-        margin: 1.2rem 0;
-        display: flex;
-        border-radius: 5px;
+      img{
         box-shadow: 0 8px 16px #0000005e;
 
-        div.box-header{
-          margin-bottom: 2rem;
+        .first{
 
-          h3{
-            color: $primary_blue;
-            
-          }
+        }
+
+        .second{
           
         }
 
-        div.box-body {
+        
+      }
+
+      div.box-header {
+        margin-bottom: 2rem;
+
+        h3 {
           color: $primary_blue;
-          @extend .bold;
-          
-        }
-      
-
-        div.box-footer {
-          padding: $p-1;
-          background-color: $primary_blue;
-          color: $primary_blue;
-          text-align: center;
-          margin-top: 1.5rem;
-          border-radius: 5px;
-          
-
-          @media screen and (max-width:767px){
-            
-            padding: .4rem;
-          }
-
-          &:hover{
-            box-shadow: 0 8px 16px #0000002e;
-          }
-
-          a{
-            color: $card_white;
-            font-weight: $font-w-600;
-          }
-
-
 
         }
 
-        &:nth-child(odd) {
-          background-color: $secondary_blue;
-          color: $card_white;
-  
-          div.box-body,
-          div.box-footer{
-            color: $card_white;
-          }
-
-          
-
-          .box-header{
-            color: $card_white;
-            font-weight: $font-w-600;
-
-            h3{
-              color: $card_white;
-            }
-            
-          }
-
-          div.box-footer{
-              background-color: $card_white;
-              a{
-                color: $primary_blue;
-                font-weight: $font-w-600;
-              }
-              
-          }
-  
-          
-        }
-
-
-
+      }
 
       
 
+
+    
 
     }
 

@@ -15,65 +15,84 @@ section.citytour-container{
 
     div.tour-group{
         
-        div.row{
-            justify-content: space-around;
+        div.tours-row{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            
 
-            div.tour-block{
-                width: 20%;
+            div.tour-wrap{
+                margin: 0 .5rem 0 .5rem;
                 display: flex;
-                flex-flow: column nowrap;
-                justify-content: baseline;
-                align-items: center;
-                margin-top: 2.5rem;
+                flex-flow: row wrap;
+                width: 45%;
 
-                @media screen and (max-width: 767px){
-                    width: 80%;
+                div.tour-block{
+                    width: 100%;
+                    display: flex;
+                    flex-flow: row nowrap;
+                    justify-content: center;
                     align-items: center;
+                    margin-top: 2.5rem;
+    
+                    @media screen and (max-width: 767px){
+                        width: 80%;
+                        align-items: center;
+    
+                    }
+    
+                    .tour-img{
+                        margin: auto;
+                        width: 50%;
+    
+                        img{
+                            
+                            height: 200px;
+                            width: 200px;
+                            border-radius: 50%;
+                            box-shadow: 0 8px 16px #000000b4;
+     
+                        }
+    
+                    }
+    
+                    .tour-info{
+                        display: flex;
+                        flex-flow: column nowrap;
+                        padding: .8rem;
 
-                }
-
-                span{
-
-                    img{
-                        
-                        height: 200px;
-                        width: 200px;
-                        border-radius: 50%;
-                        box-shadow: 0 8px 16px #000000b4;
- 
+                        div.info-header{
+                           
+                            
+                            
+                            margin:  0;
+                            font-size: 1.3em;
+                            font-weight: 550;
+        
+                        }
+        
+                        div.info-body{
+                            
+                            width: fit-content;
+                            
+                        }
+    
                     }
 
                 }
 
-                div.tour-header{
-                    width: 100%;
-                    padding: .5rem 1rem;
-                    border-radius: 6px;
-                    box-shadow: 0 8px 16px #000000b4;
-                    background-color: $primary_blue;
-                    margin: 1.5rem 0;
-                    font-size: 1.3em;
-                    color: $total_white;
-                    font-weight: 550;
-
-
-                }
-
-                div.tour-body{
-                    padding: 0 .8rem;
-                    width: fit-content;
-                    
-                }
-
                 div.tour-footer{
+                    display: flex;
+                    justify-content: space-between;
                     width: 100%;
-                    padding: 0 .8rem;
+                    padding: .8rem;
                     font-size: 1.2em;
                     color: #1d1d1d;
                     font-weight: 550;
                 }
 
             }
+            
 
             
         }

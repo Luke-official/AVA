@@ -12,9 +12,8 @@ section.slideshow-container {
     }
  
     .slideshow-wrapper {
-        background-color: $secondary_blue;
         border-radius: 6px;
-        box-shadow: 0 8px 16px #0000005e; 
+        box-shadow: 0 8px 16px #00000062; 
         margin: auto;
         width: 100%;
         height: 50%;
@@ -30,13 +29,13 @@ section.slideshow-container {
         }
 
         @media (min-width: 992px) {
-            padding: .8rem;
+            
             max-width: calc(100% - 35rem);
         }
 
         @media (min-width: 1200px) {
             max-width: calc(100% - 40vw);
-            padding: .8rem;
+            
         }
 
 
