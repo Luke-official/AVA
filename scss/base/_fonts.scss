@@ -47,3 +47,11 @@ $font-w-550: 550;
     @include fluid-type($font-22, 30px);
 }
 
+.sale{
+  line-height: 6px;
+  text-decoration-line: line-through;
+  color: red;
+  font-weight: $font-w-550;
+  
+}
+

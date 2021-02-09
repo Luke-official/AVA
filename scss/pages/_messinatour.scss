@@ -11,21 +11,36 @@ section.citytour-container{
        margin: 0 1rem;
        font-weight: 450;
        font-size: $font-20;
-   }
+    }    
 
     div.tour-group{
         
         div.tours-row{
             display: flex;
-            flex-flow: row wrap;
-            justify-content: space-between;
+            flex-flow: column wrap;
+            justify-content: flex-start;
+            align-items: center;
+
+
+            @media screen and (min-width: 767px){
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-between;
+
+            }
+
             
 
             div.tour-wrap{
-                margin: 0 .5rem 0 .5rem;
+                margin: 0 .5rem;
                 display: flex;
                 flex-flow: row wrap;
-                width: 45%;
+                width: 100%;
+
+                @media screen and (min-width: 992px){
+                    width: 45%;
+    
+                }
 
                 div.tour-block{
                     width: 100%;
@@ -36,14 +51,18 @@ section.citytour-container{
                     margin-top: 2.5rem;
     
                     @media screen and (max-width: 767px){
-                        width: 80%;
+                        flex-flow: column wrap;
                         align-items: center;
     
                     }
     
                     .tour-img{
                         margin: auto;
-                        width: 50%;
+                        
+                        @media screen and (min-width: 767px){
+                            width: 50%;
+                        }
+
     
                         img{
                             
@@ -62,33 +81,41 @@ section.citytour-container{
                         padding: .8rem;
 
                         div.info-header{
-                           
-                            
-                            
+                            @extend .bold;
                             margin:  0;
                             font-size: 1.3em;
-                            font-weight: 550;
-        
+    
                         }
-        
+
                         div.info-body{
-                            
                             width: fit-content;
-                            
+            
                         }
     
                     }
+
+                    
 
                 }
 
                 div.tour-footer{
                     display: flex;
                     justify-content: space-between;
+                    align-items: center;
                     width: 100%;
                     padding: .8rem;
+                    padding-left: 0;
                     font-size: 1.2em;
                     color: #1d1d1d;
                     font-weight: 550;
+
+                    div{
+                        p{
+                            margin: 0;
+                        }
+                    }
+
+                        
                 }
 
             }
@@ -114,14 +141,25 @@ section.citytour-container{
             width: 100%;
             margin: auto;
             border-radius: 6px;
-            box-shadow: 0 8px 16px #0000008f;
-
+            border: none;
             
-
                 img{
                     height: 35vh;
                     width: 100%;
+                    box-shadow: 0 8px 16px #0000008f;
                 }
+
+            div.tour-complete-footer{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                div{
+                    p{
+                        margin: 0;
+                    }
+                }
+            }    
 
         }
 
