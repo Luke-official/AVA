@@ -27,6 +27,19 @@ div.cover-container {
 
   }
 
+  &.catalog-page{
+    background-image: url("https://images.unsplash.com/photo-1493497029755-f49c8e9a8bbe?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1489&q=80"),
+      linear-gradient(#00000075, #00000075);
+    height: 80vh !important; 
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: -10;
+
+  }
+
   div.hero-box {
     width: 100%;
     text-align: center;

@@ -622,6 +622,21 @@ section.slideshow-container {
       margin: auto;
       width: fit-content; }
 
+.ava-content-wrapper {
+  padding: 16px 8px;
+  text-align: center; }
+  @media only screen and (min-width: 756px) {
+    .ava-content-wrapper {
+      padding: 32px 48px; } }
+
+.ava-col {
+  display: flex; }
+
+.ava-row {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap; }
+
 /*
     @include responsive_tab(){
         
@@ -855,6 +870,16 @@ div.cover-container.messina-tour {
   background-size: cover;
   z-index: -10; }
 
+div.cover-container.catalog-page {
+  background-image: url("https://images.unsplash.com/photo-1493497029755-f49c8e9a8bbe?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1489&q=80"), linear-gradient(#00000075, #00000075);
+  height: 80vh !important;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+  background-size: cover;
+  z-index: -10; }
+
 div.cover-container div.hero-box {
   width: 100%;
   text-align: center;
@@ -976,3 +1001,30 @@ section.citytour-container div.tour-fulltour {
       align-items: center; }
       section.citytour-container div.tour-fulltour div.card div.tour-complete-footer div p {
         margin: 0; }
+
+.video-catalog-wrap {
+  padding-left: 0;
+  width: calc(100% - 2 * 2);
+  justify-content: baseline; }
+  .video-catalog-wrap iframe#video-frame {
+    width: 100%;
+    height: 220px;
+    pointer-events: none;
+    box-shadow: 0 8px 16px #0000008f; }
+  .video-catalog-wrap a.video-link {
+    color: #212121;
+    text-decoration: none; }
+  .video-catalog-wrap .video-link {
+    min-width: 250px;
+    width: min-content;
+    flex: 0 0 100%;
+    padding: 18px; }
+    @media only screen and (min-width: 706px) {
+      .video-catalog-wrap .video-link {
+        flex: 0 0 49.999999%; } }
+    @media only screen and (min-width: 992px) {
+      .video-catalog-wrap .video-link {
+        flex: 0 0 33.333333%; } }
+  .video-catalog-wrap .video-info {
+    padding: 8px 16px;
+    text-align: left; }

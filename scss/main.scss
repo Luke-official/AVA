@@ -12,6 +12,7 @@
 @import 'components/titles';
 @import 'components/_UImodal';
 @import 'components/_slideshow';
+@import 'components/_containers';
 
 //helpers
 @import 'helpers/responsive_mixin';
@@ -26,3 +27,4 @@
 //Pages
 @import 'pages/index';
 @import 'pages/messinatour';
+@import 'pages/catalog';

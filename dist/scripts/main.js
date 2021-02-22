@@ -24,7 +24,7 @@ document.querySelectorAll('a[href^="#more"] , a[href^="#experiences"] , a[href^=
 });
 
 
-//Prevent background image from resize on scrolling
+/*Prevent background image from resize on scrolling
 var breakpoint = 991;
 var bgHeight = function() {
     $('#bgImg').css('height', $(window).height() + 'px');
@@ -37,6 +37,7 @@ $(window).on('resize', function() {
     }
     windowWidth = $(window).width();
 });
+*/
 
 //Change background-color of navbar on collapse or scroll
 document.addEventListener("DOMContentLoaded", function () {
@@ -68,26 +69,21 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
 
+  //Get and set src from iframe to modal
+  var videoLink = document.getElementById('videoLink');
+  var videoModal = document.getElementById('videoModal');
+  var videoFrame = document.getElementById('modalFrame');
+ 
+  videoLink.addEventListener("click", function() {
 
-const formModalSendBtn = document.getElementById('submit-form');
-formModalSendBtn.addEventListener('click', validateForm());
-
-function validateForm (){
-  let field = document.getElementsByClassName('form-control');
-
-  field.addEventListener('input', () => {
-
-    let value = field.value;
-    let trimmed = value.trim()
+    var source = this.childNodes[1].firstChild.nextSibling.src;
+    console.log(source);
+    videoFrame.src = source;
     
-    if (trimmed == "") {
-      field.classList.add("is-valid");
-    } else {
-      field.classList.add("is-invalid");
-    }
-    console.log(trimmed)
+  });
+
+  //Remove src when btn-close is triggered
+  document.getElementById('close').addEventListener('click', function(e){
+    videoFrame.src = '';
 
   });
-}
-
-

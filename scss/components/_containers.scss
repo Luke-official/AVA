@@ -1,0 +1,29 @@
+
+.ava-wrapper{
+
+}
+
+.ava-content-wrapper{
+    
+    padding: 16px 8px;
+    text-align: center;
+
+    @media only screen and (min-width: 756px){
+
+        padding: 32px 48px;
+    }
+
+}
+
+.ava-col{
+    display: flex;
+    
+}
+
+
+
+.ava-row{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+}
