@@ -1,4 +1,3 @@
-
 div#staticBackdrop.modal.fade {
     padding-right: 0;
 
@@ -43,7 +42,8 @@ div#staticBackdrop.modal.fade {
                 position: relative;
                 overflow: hidden;
                 width: 100%;
-                padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+                padding-top: 56.25%;
+                /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
 
                 iframe {
                     display: block;
@@ -63,8 +63,56 @@ div#staticBackdrop.modal.fade {
 
     }
 
-    form{
+    form {
         margin: 1rem 0;
         text-align: left;
+    }
+}
+
+/* Open video in modal */
+
+div#videoModal {
+
+    .modal-header,
+    .modal-content {
+        border: none;
+        background-color: transparent;
+
+        .close {
+            float: right;
+            margin: 5px 10px;
+            font-size: 46px;
+            color: #fff;
+            font-weight: $font-w-600;
+            text-shadow: none;
+            opacity: 1;
+        }
+
+
+    }
+
+    .modal-dialog {
+        max-width: 800px;
+        margin: 30px auto;
+    }
+
+
+
+    .modal-body {
+        position: relative;
+        padding: 0px;
+    }
+
+
+
+    .modal-content {}
+
+}
+
+div#videoModalBox {
+   
+
+    iframe#modalFrame {
+       
     }
 }

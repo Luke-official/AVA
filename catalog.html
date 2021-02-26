@@ -106,113 +106,64 @@
               </div>
             </div>
           </a>
-          
-          <!--
-          <a class="video-link" href="#" data-toggle="modal" data-target="#videoItem">
+
+          <a id="videoLink" class="video-link" href="#" data-toggle="modal" data-target="#videoModal">
             <div class="video-item">
-          
               <iframe id="video-frame" class="responsive-iframe" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
               <div class="video-info">
                 <h2>Title</h2>
                 <span>Lorem ipsum dolor sit, amet consectetur.</span>
               </div>
-          
             </div>
           </a>
-    
-          <a class="video-link" href="#" data-toggle="modal" data-target="#videoItem">
+
+          <a id="videoLink" class="video-link" href="#" data-toggle="modal" data-target="#videoModal">
             <div class="video-item">
-          
               <iframe id="video-frame" class="responsive-iframe" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
               <div class="video-info">
                 <h2>Title</h2>
                 <span>Lorem ipsum dolor sit, amet consectetur.</span>
               </div>
-          
             </div>
           </a>
-    
-          <a class="video-link" href="#" data-toggle="modal" data-target="#videoItem">
+
+          <a id="videoLink" class="video-link" href="#" data-toggle="modal" data-target="#videoModal">
             <div class="video-item">
-          
               <iframe id="video-frame" class="responsive-iframe" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
               <div class="video-info">
                 <h2>Title</h2>
                 <span>Lorem ipsum dolor sit, amet consectetur.</span>
               </div>
-          
             </div>
           </a>
-    
-          <a class="video-link" href="#" data-toggle="modal" data-target="#videoItem">
+
+          <a id="videoLink" class="video-link" href="#" data-toggle="modal" data-target="#videoModal">
             <div class="video-item">
-          
               <iframe id="video-frame" class="responsive-iframe" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
               <div class="video-info">
                 <h2>Title</h2>
                 <span>Lorem ipsum dolor sit, amet consectetur.</span>
               </div>
-          
             </div>
           </a>
-    
-          <a class="video-link" href="#" data-toggle="modal" data-target="#videoItem">
-            <div class="video-item">
           
-              <iframe id="video-frame" class="responsive-iframe" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
-              <div class="video-info">
-                <h2>Title</h2>
-                <span>Lorem ipsum dolor sit, amet consectetur.</span>
-              </div>
-          
-            </div>
-          </a>
-    
-          <a class="video-link" href="#" data-toggle="modal" data-target="#videoItem">
-            <div class="video-item">
-          
-              <iframe id="video-frame" class="responsive-iframe" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
-              <div class="video-info">
-                <h2>Title</h2>
-                <span>Lorem ipsum dolor sit, amet consectetur.</span>
-              </div>
-          
-            </div>
-          </a>
-    
-          <a class="video-link" href="#" data-toggle="modal" data-target="#videoItem">
-            <div class="video-item">
-          
-              <iframe id="video-frame" class="responsive-iframe" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
-              <div class="video-info">
-                <h2>Title</h2>
-                <span>Lorem ipsum dolor sit, amet consectetur.</span>
-              </div>
-          
-            </div>
-          </a>
-         -->
+        
+  
     
           <!-- Modal -->
-          <div class="modal fade" id="videoModal" data-backdrop="static" data-keyboard="false" tabindex="-1"
+          <div class="modal fade" id="videoModal" data-keyboard="false" tabindex="-1"
             aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog modal-md">
+            <div class="modal-dialog modal-dialog-centered" role="document">
               <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                <div class="modal-body">
                   <button type="button" id="close" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
-                </div>
-                <div class="modal-body">
-                  <div id="videoModalBox" class="modal-video">
-                    <iframe id="modalFrame" height="300" src="" frameborder="0"></iframe>
-                  </div>
-                  <div>
-                    <strong>IL CONTENUTO E' IN PRODUZIONE</strong>
-                    L'emergenza mondiale ha limitato l'accesso ai monumenti ed ora stiamo lavorando per permetterti di
-                    visionarli comodamente da casa, aiutaci quindi a dare il massimo inserendo la tua mail per avere
-                    in anteprima il contenuto non appena è pronto e clicca il link del form per il tuo feedback.
+                  <div id="videoModalBox" class="modal-video embed-responsive embed-responsive-16by9">
+                    <iframe id="modalFrame" src="" frameborder="0" allowscriptaccess="always" allow="autoplay"
+                      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                      webkitallowfullscreen mozallowfullscreen allowfullscreen>
+                    </iframe>
                   </div>
                 </div>
               </div>

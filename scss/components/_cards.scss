@@ -59,6 +59,10 @@ section.mission-section {
       &:hover {
         box-shadow: 0 8px 16px #0000002e;
       }
+
+      svg{
+        max-width: 180px;
+      }
     }
   }
 

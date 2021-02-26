@@ -15,13 +15,21 @@
 
 .title {
   text-align: center;
-  font-size: calc(22px + 8 * ( (100vw - 420px) / 480)); }
+  font-size: calc(22px + 12 * ( (100vw - 420px) / 480)); }
   @media screen and (max-width: 420px) {
     .title {
       font-size: 22px; } }
   @media screen and (min-width: 900px) {
     .title {
-      font-size: 30px; } }
+      font-size: 34px; } }
+  .title.tour-title {
+    font-size: calc(28px + 16 * ( (100vw - 420px) / 480)); }
+    @media screen and (max-width: 420px) {
+      .title.tour-title {
+        font-size: 28px; } }
+    @media screen and (min-width: 900px) {
+      .title.tour-title {
+        font-size: 44px; } }
 
 .sale {
   line-height: 6px;
@@ -46,13 +54,21 @@
 
 .title {
   text-align: center;
-  font-size: calc(22px + 8 * ( (100vw - 420px) / 480)); }
+  font-size: calc(22px + 12 * ( (100vw - 420px) / 480)); }
   @media screen and (max-width: 420px) {
     .title {
       font-size: 22px; } }
   @media screen and (min-width: 900px) {
     .title {
-      font-size: 30px; } }
+      font-size: 34px; } }
+  .title.tour-title {
+    font-size: calc(28px + 16 * ( (100vw - 420px) / 480)); }
+    @media screen and (max-width: 420px) {
+      .title.tour-title {
+        font-size: 28px; } }
+    @media screen and (min-width: 900px) {
+      .title.tour-title {
+        font-size: 44px; } }
 
 .sale {
   line-height: 6px;
@@ -210,6 +226,8 @@ section.mission-section {
           font-size: 20px; } }
       section.mission-section div.card.mission-card div.card-body:hover {
         box-shadow: 0 8px 16px #0000002e; }
+      section.mission-section div.card.mission-card div.card-body svg {
+        max-width: 180px; }
 
 .title-row {
   display: flex;
@@ -590,6 +608,29 @@ div#staticBackdrop.modal.fade {
     margin: 1rem 0;
     text-align: left; }
 
+/* Open video in modal */
+div#videoModal .modal-header,
+div#videoModal .modal-content {
+  border: none;
+  background-color: transparent; }
+  div#videoModal .modal-header .close,
+  div#videoModal .modal-content .close {
+    float: right;
+    margin: 5px 10px;
+    font-size: 46px;
+    color: #fff;
+    font-weight: 600;
+    text-shadow: none;
+    opacity: 1; }
+
+div#videoModal .modal-dialog {
+  max-width: 800px;
+  margin: 30px auto; }
+
+div#videoModal .modal-body {
+  position: relative;
+  padding: 0px; }
+
 section.slideshow-container {
   padding: 2rem;
   margin-bottom: 2rem; }
@@ -687,8 +728,7 @@ section.tours-container {
         flex-flow: column nowrap; }
         @media screen and (min-width: 768px) {
           section.tours-container div.tours-wrapper div.tours-group div.cards-row {
-            padding: 0 .5rem;
-            margin-bottom: 250px; } }
+            padding: 0 .5rem; } }
         @media screen and (min-width: 992px) {
           section.tours-container div.tours-wrapper div.tours-group div.cards-row {
             flex-flow: row;
@@ -696,13 +736,13 @@ section.tours-container {
       section.tours-container div.tours-wrapper div.tours-group div.card-col {
         position: relative;
         width: 100%;
-        margin: 2rem 0 2rem 0;
+        margin: .5rem 0 .5rem 0;
         background-color: transparent;
         padding: 0 .5rem; }
         @media screen and (min-width: 768px) {
           section.tours-container div.tours-wrapper div.tours-group div.card-col {
             padding: 0 .5rem;
-            margin-bottom: 250px; } }
+            margin-bottom: 100px; } }
         @media screen and (min-width: 992px) {
           section.tours-container div.tours-wrapper div.tours-group div.card-col {
             padding: 0 1.8rem;
@@ -744,31 +784,17 @@ section.tours-container {
             section.tours-container div.tours-wrapper div.tours-group div.card-col div.card .card-overlay .overlay-body {
               margin: 1rem 0;
               padding: .8rem; }
-      section.tours-container div.tours-wrapper div.tours-group div.footer-card {
-        display: flex;
-        align-items: flex-end;
+      section.tours-container div.tours-wrapper div.tours-group div.buttons-row {
+        padding: 2rem 1rem;
         width: 100%;
-        height: 50%;
-        border-radius: 10px;
-        background-color: #fff;
-        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 8px 16px #00000038; }
-        @media screen and (min-width: 576px) {
-          section.tours-container div.tours-wrapper div.tours-group div.footer-card {
-            padding: 1.5rem 0; } }
-        @media screen and (min-width: 992px) {
-          section.tours-container div.tours-wrapper div.tours-group div.footer-card {
-            margin-top: -140px;
-            padding: .6rem 0; } }
-        section.tours-container div.tours-wrapper div.tours-group div.footer-card div.buttons-row {
-          padding: .8rem 1rem;
-          width: 100%;
-          display: flex;
-          flex-flow: row nowrap;
-          justify-content: space-between;
-          align-items: center;
-          font-size: 22px !important; }
-          section.tours-container div.tours-wrapper div.tours-group div.footer-card div.buttons-row button a {
-            color: #fff; }
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        font-size: 22px !important; }
+        section.tours-container div.tours-wrapper div.tours-group div.buttons-row button a {
+          font-weight: 600;
+          color: #fff; }
 
 section.storybox-container {
   padding: 2em 1rem;

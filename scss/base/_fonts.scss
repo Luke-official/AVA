@@ -44,7 +44,11 @@ $font-w-550: 550;
 .title{
     text-align: center;
     @extend .bold, .franceus;
-    @include fluid-type($font-22, 30px);
+    @include fluid-type($font-22, 34px);
+
+    &.tour-title{
+      @include fluid-type(28px, 44px);
+    }
 }
 
 .sale{

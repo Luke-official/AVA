@@ -77,7 +77,6 @@ document.addEventListener("DOMContentLoaded", function () {
   videoLink.addEventListener("click", function() {
 
     var source = this.childNodes[1].firstChild.nextSibling.src;
-    console.log(source);
     videoFrame.src = source;
     
   });
