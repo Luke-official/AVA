@@ -37,8 +37,8 @@
     <header>
       <nav id="nav" class="navbar navbar-expand-md fixed-top">
         <div class="container">
-          <a id="logo" class="navbar-brand" href="index.html">
-            <img src="./img/AVA-logo.png" alt="" />
+          <a id="logo" class="navbar-brand" href="./index.html#bgImg">
+            <img src="./img/AVA-logo.png" alt="AVA Logo" />
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsedNav"
             aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
@@ -57,26 +57,21 @@
           <div class="navbar-collapse collapse" id="collapsedNav">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item active">
-                <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="./index.html#bgImg">Home <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#experiences">Exprerience</a>
+                <a class="nav-link" href="#tours">Expreriences</a>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="dropdown09" data-toggle="dropdown" aria-haspopup="true"
-                  aria-expanded="false">Contattaci</a>
-                <div class="dropdown-menu" aria-labelledby="dropdown09">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>
+              <li class="nav-item">
+                <a class="nav-link" href="./catalog.html">Tours</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./startup.html">Startup</a>
               </li>
             </ul>
-            <!--
             <div class="nav-btn">
               <button class="btn btn-primary m-auto">Prova AVA</button>
             </div>
-            -->
           </div>
         </div>
       </nav>
@@ -97,80 +92,65 @@
       <div class="ava-content-wrapper">
         <div class="ava-row video-catalog-wrap">
     
-          <a id="videoLink" class="video-link" href="#" data-toggle="modal" data-target="#videoModal">
+          <div id="videoLink" class="video-link" data-toggle="modal" data-target="#videoModal">
             <div class="video-item">
               <iframe id="video-frame" class="responsive-iframe" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
               <div class="video-info">
                 <h2>Title</h2>
                 <span>Lorem ipsum dolor sit, amet consectetur.</span>
-              </div>
-            </div>
-          </a>
-
-          <a id="videoLink" class="video-link" href="#" data-toggle="modal" data-target="#videoModal">
-            <div class="video-item">
-              <iframe id="video-frame" class="responsive-iframe" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
-              <div class="video-info">
-                <h2>Title</h2>
-                <span>Lorem ipsum dolor sit, amet consectetur.</span>
-              </div>
-            </div>
-          </a>
-
-          <a id="videoLink" class="video-link" href="#" data-toggle="modal" data-target="#videoModal">
-            <div class="video-item">
-              <iframe id="video-frame" class="responsive-iframe" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
-              <div class="video-info">
-                <h2>Title</h2>
-                <span>Lorem ipsum dolor sit, amet consectetur.</span>
-              </div>
-            </div>
-          </a>
-
-          <a id="videoLink" class="video-link" href="#" data-toggle="modal" data-target="#videoModal">
-            <div class="video-item">
-              <iframe id="video-frame" class="responsive-iframe" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
-              <div class="video-info">
-                <h2>Title</h2>
-                <span>Lorem ipsum dolor sit, amet consectetur.</span>
-              </div>
-            </div>
-          </a>
-
-          <a id="videoLink" class="video-link" href="#" data-toggle="modal" data-target="#videoModal">
-            <div class="video-item">
-              <iframe id="video-frame" class="responsive-iframe" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
-              <div class="video-info">
-                <h2>Title</h2>
-                <span>Lorem ipsum dolor sit, amet consectetur.</span>
-              </div>
-            </div>
-          </a>
-          
-        
-  
-    
-          <!-- Modal -->
-          <div class="modal fade" id="videoModal" data-keyboard="false" tabindex="-1"
-            aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-              <div class="modal-content">
-                <div class="modal-body">
-                  <button type="button" id="close" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                  <div id="videoModalBox" class="modal-video embed-responsive embed-responsive-16by9">
-                    <iframe id="modalFrame" src="" frameborder="0" allowscriptaccess="always" allow="autoplay"
-                      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-                      webkitallowfullscreen mozallowfullscreen allowfullscreen>
-                    </iframe>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
-    
+
+          <div id="videoLink" class="video-link" data-toggle="modal" data-target="#videoModal">
+            <div class="video-item">
+              <iframe id="video-frame" class="responsive-iframe" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+              <div class="video-info">
+                <h2>Title</h2>
+                <span>Lorem ipsum dolor sit, amet consectetur.</span>
+              </div>
+            </div>
+          </div>
+
+          <div id="videoLink" class="video-link" data-toggle="modal" data-target="#videoModal">
+            <div class="video-item">
+              <iframe id="video-frame" class="responsive-iframe" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+              <div class="video-info">
+                <h2>Title</h2>
+                <span>Lorem ipsum dolor sit, amet consectetur.</span>
+              </div>
+            </div>
+          </div>
+
+          <div id="videoLink" class="video-link" data-toggle="modal" data-target="#videoModal">
+            <div class="video-item">
+              <iframe id="video-frame" class="responsive-iframe" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+              <div class="video-info">
+                <h2>Title</h2>
+                <span>Lorem ipsum dolor sit, amet consectetur.</span>
+              </div>
+            </div>
+          </div>
         </div>
+        <!-- Modal -->
+        <div class="modal fade" id="videoModal" data-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" id="close" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <div id="videoModalBox" class="modal-video embed-responsive embed-responsive-16by9">
+                <iframe id="modalFrame" src="" frameborder="0" allowscriptaccess="always" allow="autoplay"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                  webkitallowfullscreen mozallowfullscreen allowfullscreen>
+                </iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       </div>
     </section>
 

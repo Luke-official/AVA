@@ -69,15 +69,18 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
 
+
+
   //Get and set src from iframe to modal
-  var videoLink = document.getElementById('videoLink');
+  var videoLink = document.querySelector('.video-link');
   var videoModal = document.getElementById('videoModal');
   var videoFrame = document.getElementById('modalFrame');
- 
+
   videoLink.addEventListener("click", function() {
 
     var source = this.childNodes[1].firstChild.nextSibling.src;
     videoFrame.src = source;
+    console.log(source);
     
   });
 
@@ -86,3 +89,35 @@ document.addEventListener("DOMContentLoaded", function () {
     videoFrame.src = '';
 
   });
+
+  
+
+  $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:3,
+            nav:false
+        },
+        1000:{
+            items:5,
+            nav:true,
+            loop:false
+        }
+    }
+})
+
+
+  
+
+
+
+
+
+  

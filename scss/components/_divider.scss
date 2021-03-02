@@ -1,0 +1,36 @@
+
+//options
+.rotate-180{
+    -webkit-transform: rotateX(180deg);
+        transform: rotateX(180deg);
+        padding-top: 3rem;
+}
+
+.layer{
+    position: absolute;
+    z-index: -100;
+}
+
+.ava-particles{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    z-index: -100;
+}
+
+.ava-divider{
+    z-index: -100;
+    width: 100%;
+    
+
+    path{
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    }
+ 
+    .bottom-wave{
+        @extend .rotate-180;
+        margin-top: -1px;
+
+    }
+
+}

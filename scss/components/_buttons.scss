@@ -1,0 +1,32 @@
+.ava-feedback-circle {
+    background-color: $primary_blue;
+    position: fixed;
+
+}
+
+.ava-btn {
+    background-color: $primary_blue;
+    border-radius: 20px;
+    padding: 10px 15px;
+    color: $primary_blue;
+    font-weight: $font-w-600;
+    font-size: $font-18;
+
+    &.btn-outline {
+        background-color: transparent;
+        border: 3px solid $primary_blue;
+    
+        &:hover {
+            background-color: $primary_blue;
+            color: $card_white;
+            text-decoration: none;
+    
+           
+        }
+    } 
+}
+
+
+
+      
+        

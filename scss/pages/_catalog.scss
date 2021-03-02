@@ -11,14 +11,10 @@
         box-shadow: 0 8px 16px #0000008f;
     }
 
-    a.video-link{
+    .video-link{
         color: $primary_dark;
         text-decoration: none;
-
-
-    }
-
-    .video-link{
+        cursor: pointer;
         min-width: 250px;
         width: min-content;
         flex: 0 0 100%;

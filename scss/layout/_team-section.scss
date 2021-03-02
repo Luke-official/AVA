@@ -1,0 +1,64 @@
+
+
+.ava-team{
+
+    .ava-divider{
+        margin-bottom: -1px;
+    }
+
+    .ava-content-wrapper{
+        
+        background-color: $primary_blue;
+    }
+
+    .team-card{
+      // @extend .jus-baseline;
+        justify-content: baseline;
+        margin: 16px 32px;
+        padding: 20px;
+        height: auto;
+        width: 250px;
+        background-color: white;
+        border-radius: 10px;
+
+        
+
+        div.img-box{
+            text-align: center;
+            
+            object-fit:cover;
+            border-radius:50%;
+
+            img{
+                object-fit:cover;
+                border-radius:50%;
+                width: 90px;
+                height:90px;
+               box-shadow: 8px 8px 8px -5px #666666 ;
+            }
+
+        }
+        
+        .team-info{
+            text-align: center;
+            
+            object-fit:contain;
+            
+            
+            span.name{
+                display: block;
+                font-size: 22px;
+                font-weight: 600;
+                padding:10px;
+
+            }
+
+            span.job{
+               // @include fluid-type(16px, 18px);
+                padding:10px;
+            }
+        }
+        
+    }
+
+}

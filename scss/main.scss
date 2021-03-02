@@ -13,9 +13,12 @@
 @import 'components/_UImodal';
 @import 'components/_slideshow';
 @import 'components/_containers';
+@import 'components/_buttons';
+@import 'components/_timeline';
+@import 'components/_divider';
 
 //helpers
-@import 'helpers/responsive_mixin';
+@import 'helpers/_mixins';
 
 //layout
 @import 'layout/tours';
@@ -23,6 +26,7 @@
 @import 'layout/preloader';
 @import 'layout/3Dmodel';
 @import 'layout/cerbellvm';
+@import 'layout/team-section';
 
 //Pages
 @import 'pages/index';

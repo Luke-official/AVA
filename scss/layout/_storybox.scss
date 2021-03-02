@@ -24,6 +24,10 @@ section.storybox-container {
       margin: 1.2rem 0;
       display: flex;
       border-radius: 5px;
+
+      .box-body{
+        font-weight: 450;
+      }
       
 
       img{
@@ -44,7 +48,8 @@ section.storybox-container {
         margin-bottom: 2rem;
 
         h3 {
-          color: $primary_blue;
+          color: black;
+          font-weight: $font-w-550;
 
         }
 
