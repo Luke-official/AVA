@@ -10,6 +10,14 @@ section.citytour-container{
        margin: 0 1rem;
        font-weight: 450;
        font-size: $font-20;
+
+        .buy-oculus{
+            margin-top: 20px;
+            a{
+                color: $card_white;
+            }
+            
+        }
     }    
 
     div.tour-group{
@@ -105,7 +113,7 @@ section.citytour-container{
                     padding: .8rem;
                     padding-left: 0;
                     font-size: 1.2em;
-                    color: #1d1d1d;
+                    color: #494949;
                     font-weight: 550;
 
                     div{

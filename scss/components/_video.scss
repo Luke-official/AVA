@@ -1,0 +1,26 @@
+.ava-video{
+    position: relative;
+    padding: 20px;
+    
+
+    iframe{
+        width: 100%;
+        display: block;      
+        margin: auto;
+
+        @media screen and (min-width: 767px){
+            width: 516px;
+            height: 430px;
+            
+        }
+
+        @media screen and (min-width: 992px){
+            width: 760px;
+            height: 430px;
+            
+        }
+        
+       
+        
+    }
+}

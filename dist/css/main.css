@@ -34,7 +34,8 @@
 .sale {
   line-height: 6px;
   text-decoration-line: line-through;
-  color: red;
+  color: #8c8c8c;
+  margin-bottom: 5px;
   font-weight: 550; }
 
 /*
@@ -73,7 +74,8 @@
 .sale {
   line-height: 6px;
   text-decoration-line: line-through;
-  color: red;
+  color: #8c8c8c;
+  margin-bottom: 5px;
   font-weight: 550; }
 
 * {
@@ -203,6 +205,7 @@ section.mission-section {
       font-size: 24px;
       font-weight: 550; }
     section.mission-section div.card.mission-card p.card-text {
+      text-align: start;
       font-size: 18px;
       font-weight: 400; }
     section.mission-section div.card.mission-card div.card-header {
@@ -659,12 +662,16 @@ div#staticBackdrop.modal.fade {
       div#staticBackdrop.modal.fade div.modal-dialog {
         max-width: 767px;
         margin: 1.75rem auto; } }
-    div#staticBackdrop.modal.fade div.modal-dialog div.modal-header button span {
-      color: #fff; }
-      div#staticBackdrop.modal.fade div.modal-dialog div.modal-header button span:hover {
-        color: red; }
+    div#staticBackdrop.modal.fade div.modal-dialog div.modal-header {
+      border: none; }
+      div#staticBackdrop.modal.fade div.modal-dialog div.modal-header button span {
+        color: #fff; }
+        div#staticBackdrop.modal.fade div.modal-dialog div.modal-header button span:hover {
+          color: red; }
     div#staticBackdrop.modal.fade div.modal-dialog div.modal-content {
       background-color: #000000b9; }
+    div#staticBackdrop.modal.fade div.modal-dialog div.modal-description {
+      padding: 2rem; }
     div#staticBackdrop.modal.fade div.modal-dialog div.modal-body {
       display: flex;
       flex-flow: column nowrap;
@@ -765,9 +772,13 @@ section.slideshow-container {
   background-color: #0072bb;
   position: fixed; }
 
+.btn-primary {
+  background-color: #0072bb !important;
+  color: #eeeeee !important; }
+
 .ava-btn {
   background-color: #0072bb;
-  border-radius: 20px;
+  border-radius: .25rem;
   padding: 10px 15px;
   color: #0072bb;
   font-weight: 600;
@@ -926,6 +937,22 @@ section.slideshow-container {
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; }
   .ava-divider .bottom-wave {
     margin-top: -1px; }
+
+.ava-video {
+  position: relative;
+  padding: 20px; }
+  .ava-video iframe {
+    width: 100%;
+    display: block;
+    margin: auto; }
+    @media screen and (min-width: 767px) {
+      .ava-video iframe {
+        width: 516px;
+        height: 430px; } }
+    @media screen and (min-width: 992px) {
+      .ava-video iframe {
+        width: 760px;
+        height: 430px; } }
 
 /*
  *  MEDIA QUERIES
@@ -1119,18 +1146,22 @@ section.cerbellvm-container {
   background-color: #0072bb; }
 
 .ava-team .team-card {
+  display: flex;
+  flex-flow: column;
   justify-content: baseline;
   margin: 16px 32px;
   padding: 20px;
-  height: auto;
+  height: 250px;
   width: 250px;
   background-color: white;
-  border-radius: 10px; }
+  border-radius: 10px;
+  box-shadow: rgba(255, 255, 255, 0.4) 5px 5px, rgba(255, 255, 255, 0.3) 10px 10px, rgba(255, 255, 255, 0.2) 15px 15px, rgba(255, 255, 255, 0.1) 20px 20px, rgba(255, 255, 255, 0.1) 25px 25px; }
   .ava-team .team-card div.img-box {
     text-align: center;
     object-fit: cover;
     border-radius: 50%; }
     .ava-team .team-card div.img-box img {
+      margin: auto;
       object-fit: cover;
       border-radius: 50%;
       width: 90px;
@@ -1225,6 +1256,10 @@ section.citytour-container div.city-story {
   margin: 0 1rem;
   font-weight: 450;
   font-size: 20px; }
+  section.citytour-container div.city-story .buy-oculus {
+    margin-top: 20px; }
+    section.citytour-container div.city-story .buy-oculus a {
+      color: #eeeeee; }
 
 section.citytour-container div.tour-group div.tours-row {
   display: flex;
@@ -1282,7 +1317,7 @@ section.citytour-container div.tour-group div.tours-row {
       padding: .8rem;
       padding-left: 0;
       font-size: 1.2em;
-      color: #1d1d1d;
+      color: #494949;
       font-weight: 550; }
       section.citytour-container div.tour-group div.tours-row div.tour-wrap div.tour-footer div p {
         margin: 0; }

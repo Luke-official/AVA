@@ -12,15 +12,22 @@
     }
 
     .team-card{
+        display: flex;
+        flex-flow: column;
       // @extend .jus-baseline;
         justify-content: baseline;
         margin: 16px 32px;
         padding: 20px;
-        height: auto;
+        height: 250px;
         width: 250px;
         background-color: white;
         border-radius: 10px;
+        box-shadow:  rgba(255, 255, 255, 0.4) 5px 5px,  rgba(255, 255, 255, 0.3) 10px 10px,  rgba(255, 255, 255, 0.2) 15px 15px, rgba(255, 255, 255, 0.1) 20px 20px, rgba(255, 255, 255, 0.1) 25px 25px;
 
+        @media screen and (max-width:567px){
+            
+            
+        }
         
 
         div.img-box{
@@ -30,11 +37,12 @@
             border-radius:50%;
 
             img{
+                margin: auto;
                 object-fit:cover;
                 border-radius:50%;
                 width: 90px;
                 height:90px;
-               box-shadow: 8px 8px 8px -5px #666666 ;
+                box-shadow: 8px 8px 8px -5px #666666 ;
             }
 
         }

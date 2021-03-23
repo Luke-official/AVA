@@ -4,9 +4,14 @@
 
 }
 
+.btn-primary{
+    background-color: $primary_blue !important;
+    color: $card_white !important;
+}
+
 .ava-btn {
     background-color: $primary_blue;
-    border-radius: 20px;
+    border-radius:.25rem;
     padding: 10px 15px;
     color: $primary_blue;
     font-weight: $font-w-600;

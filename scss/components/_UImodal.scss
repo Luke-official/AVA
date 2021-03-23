@@ -11,6 +11,7 @@ div#staticBackdrop.modal.fade {
         }
 
         div.modal-header {
+            border: none;
 
             button {
 
@@ -26,6 +27,10 @@ div#staticBackdrop.modal.fade {
 
         div.modal-content {
             background-color: #000000b9;
+        }
+
+        div.modal-description{
+            padding:2rem;
         }
 
         div.modal-footer {}
