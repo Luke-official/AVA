@@ -70,3 +70,62 @@
     }
 
 }
+
+.ava-feedback{
+    .box {
+        margin: auto
+    }
+    
+    .card {
+        padding: 8%;
+        padding-top: 35px;
+        margin-top: 60px;
+        margin-bottom: 80px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    
+    textarea[name="message"] {
+        resize: none
+    }
+    
+    #e-mail {
+        height: 45px
+    }
+    
+    #message {
+        height: 120px
+    }
+    
+    input.input-box,
+    textarea.input-box {
+        box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+        background-color: #ffffff;
+        color: #BDBDBD;
+    }
+    
+    input.input-box:focus,
+    textarea.input-box:focus {
+        box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+        background-color: #ffffff;
+        color: #BDBDBD;
+    }
+    
+    .rm-border:focus {
+        border-color: inherit;
+        -webkit-box-shadow: none;
+        box-shadow: none
+    }
+    
+    form .form-control::-webkit-input-placeholder {
+        color: #9E9E9E
+    }
+    
+    ::-moz-placeholder {
+        color: #9E9E9E !important
+    }
+    
+    input.btn-purple {
+        background-color: #5C6BC0;
+        color: #ffffff
+    }
+}

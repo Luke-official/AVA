@@ -776,17 +776,23 @@ section.slideshow-container {
   background-color: #0072bb !important;
   color: #eeeeee !important; }
 
-.ava-btn {
+input.ava-btn,
+button.ava-btn,
+a.ava-btn {
   background-color: #0072bb;
   border-radius: .25rem;
   padding: 10px 15px;
-  color: #0072bb;
+  color: #eeeeee;
   font-weight: 600;
   font-size: 18px; }
-  .ava-btn.btn-outline {
+  input.ava-btn.btn-outline,
+  button.ava-btn.btn-outline,
+  a.ava-btn.btn-outline {
     background-color: transparent;
     border: 3px solid #0072bb; }
-    .ava-btn.btn-outline:hover {
+    input.ava-btn.btn-outline:hover,
+    button.ava-btn.btn-outline:hover,
+    a.ava-btn.btn-outline:hover {
       background-color: #0072bb;
       color: #eeeeee;
       text-decoration: none; }
@@ -1177,6 +1183,52 @@ section.cerbellvm-container {
       padding: 10px; }
     .ava-team .team-card .team-info span.job {
       padding: 10px; }
+
+.ava-feedback .box {
+  margin: auto; }
+
+.ava-feedback .card {
+  padding: 8%;
+  padding-top: 35px;
+  margin-top: 60px;
+  margin-bottom: 80px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; }
+
+.ava-feedback textarea[name="message"] {
+  resize: none; }
+
+.ava-feedback #e-mail {
+  height: 45px; }
+
+.ava-feedback #message {
+  height: 120px; }
+
+.ava-feedback input.input-box,
+.ava-feedback textarea.input-box {
+  box-shadow: #ccdbe8 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  background-color: #ffffff;
+  color: #BDBDBD; }
+
+.ava-feedback input.input-box:focus,
+.ava-feedback textarea.input-box:focus {
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+  background-color: #ffffff;
+  color: #BDBDBD; }
+
+.ava-feedback .rm-border:focus {
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+.ava-feedback form .form-control::-webkit-input-placeholder {
+  color: #9E9E9E; }
+
+.ava-feedback ::-moz-placeholder {
+  color: #9E9E9E !important; }
+
+.ava-feedback input.btn-purple {
+  background-color: #5C6BC0;
+  color: #ffffff; }
 
 /*
  *  MEDIA QUERIES
