@@ -1060,6 +1060,8 @@ section.tours-container {
             section.tours-container div.tours-wrapper div.tours-group div.card-col div.card .card-overlay .overlay-body {
               margin: 1rem 0;
               padding: .8rem; }
+              section.tours-container div.tours-wrapper div.tours-group div.card-col div.card .card-overlay .overlay-body p {
+                font-size: 24px; }
       section.tours-container div.tours-wrapper div.tours-group div.buttons-row {
         padding: 2rem 1rem;
         width: 100%;
