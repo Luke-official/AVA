@@ -76,7 +76,9 @@ div#staticBackdrop.modal.fade {
 
 /* Open video in modal */
 
-div#videoModal {
+#videoModalOne,
+#videoModalTwo,
+#videoModalThree {
 
     .modal-header,
     .modal-content {
@@ -109,15 +111,5 @@ div#videoModal {
     }
 
 
-
-    .modal-content {}
-
 }
 
-div#videoModalBox {
-   
-
-    iframe#modalFrame {
-       
-    }
-}

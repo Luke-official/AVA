@@ -171,14 +171,14 @@ footer {
     display: flex;
     flex-flow: row wrap;
     margin: auto; }
-    footer div.footer-wrapper div.col-lg {
+    footer div.footer-wrapper div.footer-brand {
+      display: flex;
+      flex-flow: column;
       justify-content: center;
       align-items: center; }
-      footer div.footer-wrapper div.col-lg div.footer-brand a.navbar-brand {
-        margin: auto; }
-        footer div.footer-wrapper div.col-lg div.footer-brand a.navbar-brand img {
-          width: 60px;
-          height: 60px; }
+      footer div.footer-wrapper div.footer-brand a.navbar-brand img {
+        width: 60px;
+        height: 60px; }
 
 section.mission-section {
   padding: 2rem 2.5rem;
@@ -699,12 +699,20 @@ div#staticBackdrop.modal.fade {
     text-align: left; }
 
 /* Open video in modal */
-div#videoModal .modal-header,
-div#videoModal .modal-content {
+#videoModalOne .modal-header,
+#videoModalOne .modal-content,
+#videoModalTwo .modal-header,
+#videoModalTwo .modal-content,
+#videoModalThree .modal-header,
+#videoModalThree .modal-content {
   border: none;
   background-color: transparent; }
-  div#videoModal .modal-header .close,
-  div#videoModal .modal-content .close {
+  #videoModalOne .modal-header .close,
+  #videoModalOne .modal-content .close,
+  #videoModalTwo .modal-header .close,
+  #videoModalTwo .modal-content .close,
+  #videoModalThree .modal-header .close,
+  #videoModalThree .modal-content .close {
     float: right;
     margin: 5px 10px;
     font-size: 46px;
@@ -713,11 +721,15 @@ div#videoModal .modal-content {
     text-shadow: none;
     opacity: 1; }
 
-div#videoModal .modal-dialog {
+#videoModalOne .modal-dialog,
+#videoModalTwo .modal-dialog,
+#videoModalThree .modal-dialog {
   max-width: 800px;
   margin: 30px auto; }
 
-div#videoModal .modal-body {
+#videoModalOne .modal-body,
+#videoModalTwo .modal-body,
+#videoModalThree .modal-body {
   position: relative;
   padding: 0px; }
 
@@ -784,7 +796,23 @@ a.ava-btn {
   padding: 10px 15px;
   color: #eeeeee;
   font-weight: 600;
-  font-size: 18px; }
+  font-size: 18px;
+  text-decoration: none; }
+  input.ava-btn.cta-btn,
+  button.ava-btn.cta-btn,
+  a.ava-btn.cta-btn {
+    font-size: 22px;
+    border-radius: .45rem; }
+  input.ava-btn button a:hover,
+  button.ava-btn button a:hover,
+  a.ava-btn button a:hover {
+    text-decoration: none; }
+  input.ava-btn:hover,
+  button.ava-btn:hover,
+  a.ava-btn:hover {
+    color: #eeeeee;
+    background-color: #9c9c9c;
+    text-decoration: none; }
   input.ava-btn.btn-outline,
   button.ava-btn.btn-outline,
   a.ava-btn.btn-outline {
@@ -1062,6 +1090,9 @@ section.tours-container {
               padding: .8rem; }
               section.tours-container div.tours-wrapper div.tours-group div.card-col div.card .card-overlay .overlay-body p {
                 font-size: 24px; }
+                @media screen and (min-width: 1124px) {
+                  section.tours-container div.tours-wrapper div.tours-group div.card-col div.card .card-overlay .overlay-body p {
+                    font-size: 26px; } }
       section.tours-container div.tours-wrapper div.tours-group div.buttons-row {
         padding: 2rem 1rem;
         width: 100%;
@@ -1126,6 +1157,27 @@ section.storybox-container {
   overflow: visible;
   background: #333 url("//cdnjs.cloudflare.com/ajax/libs/file-uploader/3.7.0/processing.gif") no-repeat center center; }
 
+div.ava-content-wrapper.model-content {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 900px;
+  margin: 2.5rem auto; }
+
+div.citytour-model {
+  border-radius: 30px;
+  padding: 3rem;
+  background: #00cef9;
+  background: linear-gradient(52deg, #00cff962 0%, #0cabfa71 32%, #119dfa54 49%, #1843a073 100%);
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px; }
+  div.citytour-model .model-icon a.model-link img {
+    transition: all 0.3s;
+    height: 180px;
+    width: 180px; }
+    div.citytour-model .model-icon a.model-link img:hover {
+      transform: scale(1.3) rotate(10deg); }
+
 section.cerbellvm-container {
   padding: 3rem 0;
   text-align: center; }
@@ -1164,16 +1216,27 @@ section.cerbellvm-container {
   background-color: white;
   border-radius: 10px;
   box-shadow: rgba(255, 255, 255, 0.4) 5px 5px, rgba(255, 255, 255, 0.3) 10px 10px, rgba(255, 255, 255, 0.2) 15px 15px, rgba(255, 255, 255, 0.1) 20px 20px, rgba(255, 255, 255, 0.1) 25px 25px; }
+  .ava-team .team-card:hover div.img-box img {
+    transform: scale(1.2); }
+  .ava-team .team-card a {
+    color: #3f3f3f;
+    text-decoration: none; }
+    .ava-team .team-card a:hover {
+      font-weight: 500;
+      color: #002f96;
+      text-decoration: none; }
   .ava-team .team-card div.img-box {
     text-align: center;
     object-fit: cover;
     border-radius: 50%; }
     .ava-team .team-card div.img-box img {
+      transition: ease-in-out 3ms;
       margin: auto;
       object-fit: cover;
+      background-position: bottom;
       border-radius: 50%;
-      width: 90px;
-      height: 90px;
+      width: 120px;
+      height: 120px;
       box-shadow: 8px 8px 8px -5px #666666; }
   .ava-team .team-card .team-info {
     text-align: center;
@@ -1238,7 +1301,7 @@ section.cerbellvm-container {
 */
 div.cover-container.home-page {
   background-image: url("https://images.unsplash.com/photo-1530825894095-9c184b068fcb?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1953&q=80"), linear-gradient(#00000075, #00000075);
-  height: 80vh !important;
+  height: 100vh !important;
   background-position: center;
   background-repeat: no-repeat;
   background-blend-mode: overlay;
@@ -1257,8 +1320,8 @@ div.cover-container.startup-cover {
   z-index: -10; }
 
 div.cover-container.messina-tour {
-  background-image: url("../../img/tours_messinahome.jpg"), linear-gradient(#00000075, #00000075);
-  height: 80vh !important;
+  background-image: url("../../img/messina-background.jpg"), linear-gradient(#00000075, #00000075);
+  height: 100vh !important;
   background-position: center;
   background-repeat: no-repeat;
   background-blend-mode: overlay;
@@ -1268,7 +1331,7 @@ div.cover-container.messina-tour {
 
 div.cover-container.catalog-page {
   background-image: url("https://images.unsplash.com/photo-1493497029755-f49c8e9a8bbe?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1489&q=80"), linear-gradient(#00000075, #00000075);
-  height: 80vh !important;
+  height: 100vh !important;
   background-position: bottom;
   background-repeat: no-repeat;
   background-blend-mode: overlay;
@@ -1300,11 +1363,6 @@ div.cover-container div.hero-box {
       font-size: 2em; }
     div.cover-container div.hero-box h3 {
       font-size: 1.2em; } }
-
-section.citytour-container div.citytour-model {
-  margin: 2rem;
-  border: 2px solid #0072bb;
-  height: 70vh; }
 
 section.citytour-container div.city-story {
   margin: 0 1rem;

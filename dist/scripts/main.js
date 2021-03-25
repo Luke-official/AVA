@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
 
-
+/*
 
   //Get and set src from iframe to modal
   var videoLink = document.querySelector('.video-link');
@@ -96,7 +96,36 @@ document.addEventListener("DOMContentLoaded", function () {
  
 
 
+function insertVideo(x, url){
+  var iframe = '<iframe src="'+url+'?autoplay=1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+  x.innerHTML = iframe;
+  x.classList.add("fatto");
+}
+
+var videoFrame = document.getElementById('videoFrame');
+
+//videoFrame.addEventListener('click', function insertVideo(this,"https://www.youtube.com/embed/KvlLHWn9VMA%27"));
 
 
 
-  
+var videoLink = document.querySelector('.video-link');
+var videoModal = document.getElementById('videoModal');
+var videoFrame = document.getElementById('modalFrame');
+
+videoLink.addEventListener("click", function() {
+    var theModal = $(this).data("target");
+    var videoSRC = $(this).attr("data-video");
+
+    console.log(videoSRC)
+
+    $(theModal + " source").attr("src", videoSRC);
+  });
+
+
+//Remove src when btn-close is triggered
+document.getElementById('close').addEventListener('click', function(e){
+  videoFrame.src = '';
+
+});
+
+*/

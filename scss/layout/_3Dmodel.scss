@@ -1,0 +1,38 @@
+
+div.ava-content-wrapper.model-content{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 900px;
+    margin: 2.5rem auto;
+    
+}
+div.citytour-model{
+    border-radius: 30px;
+    padding: 3rem;
+    background: rgb(0,206,249);
+    background: linear-gradient(52deg, #00cff962 0%, #0cabfa71 32%, #119dfa54 49%, #1843a073 100%); 
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  
+
+    .model-icon{
+        a.model-link{
+            
+            img{
+                transition: all 0.3s;
+                height: 180px;
+                width: 180px;
+                
+
+                &:hover{
+                    transform: scale(1.3) rotate(10deg);
+                }
+            }
+
+            
+        }
+        
+    }
+
+}

@@ -5,7 +5,7 @@ div.cover-container {
   &.home-page {
     background-image: url("https://images.unsplash.com/photo-1530825894095-9c184b068fcb?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1953&q=80"),
       linear-gradient(#00000075, #00000075);
-    height: 80vh !important;
+    height: 100vh !important;
     background-position: center;
     background-repeat: no-repeat;
     background-blend-mode: overlay;
@@ -28,9 +28,9 @@ div.cover-container {
   }
 
   &.messina-tour{
-    background-image: url("../../img/tours_messinahome.jpg"),
+    background-image: url("../../img/messina-background.jpg"),
       linear-gradient(#00000075, #00000075);
-    height: 80vh !important; 
+    height: 100vh !important; 
     background-position: center;
     background-repeat: no-repeat;
     background-blend-mode: overlay;
@@ -43,7 +43,7 @@ div.cover-container {
   &.catalog-page{
     background-image: url("https://images.unsplash.com/photo-1493497029755-f49c8e9a8bbe?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1489&q=80"),
       linear-gradient(#00000075, #00000075);
-    height: 80vh !important; 
+    height: 100vh !important; 
     background-position: bottom;
     background-repeat: no-repeat;
     background-blend-mode: overlay;

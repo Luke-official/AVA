@@ -70,7 +70,7 @@
               </li>
             </ul>
             <div class="nav-btn">
-              <button class="btn btn-primary m-auto">Prova AVA</button>
+              <a class="ava-btn" href="https://augmentevisualart.com/it_IT/engine" >Prova AVA</a>
             </div>
           </div>
         </div>
@@ -85,6 +85,15 @@
   </div>
 
   <main class="">
+
+    <section class="ava-divider">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#0072bb" fill-opacity="1"
+          d="M0,288L30,272C60,256,120,224,180,224C240,224,300,256,360,234.7C420,213,480,139,540,144C600,149,660,235,720,277.3C780,320,840,320,900,293.3C960,267,1020,213,1080,202.7C1140,192,1200,224,1260,218.7C1320,213,1380,171,1410,149.3L1440,128L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z"
+          style="--darkreader-inline-fill:#065d95;" data-darkreader-inline-fill=""></path>
+      </svg>
+    </section>
+
     <section class="citytour-container p-4">
       <div class="title-row">
         <h2 id="more" class="title">I Nostri Video</h2>
@@ -92,69 +101,123 @@
       <div class="ava-content-wrapper">
         <div class="ava-row video-catalog-wrap">
 
-          <div class="video-link" data-toggle="modal" data-target="#videoModal">
+          <!-- Primary Video -->
+          <div class="video-link" data-toggle="modal" data-target="#videoModalOne">
             <div class="video-item">
-              <iframe id="video-frame" class="responsive-iframe" src="https://www.youtube.com/embed/VT4NiKe-VwA"  title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+              <iframe id="video-frame" class="responsive-iframe" src="https://www.youtube.com/embed/VT4NiKe-VwA"
+                title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+              <!--
+              <div class="video-info">
+                <h2>Title</h2>
+                <span>Lorem ipsum dolor sit, amet consectetur.</span>
+              </div>
+              -->
+            </div>
+          </div>
+
+          <!-- Secondary Video -->
+          <div class="video-link" data-toggle="modal" data-target="#videoModalTwo">
+            <div class="video-item">
+              <iframe id="video-frame" class="responsive-iframe" src="https://www.youtube.com/embed/Q53ALjHPqtE"
+                title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+              <!--
+              <div class="video-info">
+                <h2>Title</h2>
+                <span>Lorem ipsum dolor sit, amet consectetur.</span>
+              </div>
+              -->
+            </div>
+          </div>
+
+          <!-- Third Video -->
+          <div class="video-link" data-toggle="modal" data-target="#videoModalThree">
+            <div class="video-item">
               <!--<iframe id="video-frame" class="responsive-iframe" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe> -->
+              <iframe id="video-frame" class="responsive-iframe" src="https://www.youtube.com/embed/1y3EqYdEMw0"
+                title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+              <!--
               <div class="video-info">
                 <h2>Title</h2>
                 <span>Lorem ipsum dolor sit, amet consectetur.</span>
               </div>
+              -->
             </div>
           </div>
-
-          <div class="video-link" data-toggle="modal" data-target="#videoModal">
-            <div class="video-item">
-              <iframe id="video-frame" class="responsive-iframe" src="https://www.youtube.com/embed/Q53ALjHPqtE" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
-              <div class="video-info">
-                <h2>Title</h2>
-                <span>Lorem ipsum dolor sit, amet consectetur.</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="video-link" data-toggle="modal" data-target="#videoModal">
-            <div class="video-item">
-               <!--<iframe id="video-frame" class="responsive-iframe" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe> -->
-              <iframe id="video-frame" class="responsive-iframe" src="https://www.youtube.com/embed/1y3EqYdEMw0" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
-              <div class="video-info">
-                <h2>Title</h2>
-                <span>Lorem ipsum dolor sit, amet consectetur.</span>
-              </div>
-            </div>
-          </div>
-
         </div>
-        <!-- Modal -->
-        <div class="modal fade" id="videoModal" data-keyboard="false" tabindex="-1"
-        aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
-            <div class="modal-body">
-              <button type="button" id="close" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-              <div id="videoModalBox" class="modal-video embed-responsive embed-responsive-16by9">
-                <iframe id="modalFrame" src="" frameborder="0" allowscriptaccess="always" allow="autoplay"
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-                  webkitallowfullscreen mozallowfullscreen allowfullscreen>
-                </iframe>
+
+        <!-- Modal Primary -->
+        <div class="modal fade" id="videoModalOne" data-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <button type="button" id="close" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <div id="videoModalBox" class="modal-video embed-responsive embed-responsive-16by9">
+                  <iframe id="modalFrame" src="https://www.youtube.com/embed/VT4NiKe-VwA" frameborder="0"
+                    allowscriptaccess="always" allow="autoplay"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    webkitallowfullscreen mozallowfullscreen allowfullscreen>
+                  </iframe>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+
+        <!-- Modal Second -->
+        <div class="modal fade" id="videoModalTwo" data-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <button type="button" id="close" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <div id="videoModalBox" class="modal-video embed-responsive embed-responsive-16by9">
+                  <iframe id="modalFrame" src="https://www.youtube.com/embed/Q53ALjHPqtE" frameborder="0"
+                    allowscriptaccess="always" allow="autoplay"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    webkitallowfullscreen mozallowfullscreen allowfullscreen>
+                  </iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal Third-->
+        <div class="modal fade" id="videoModalThree" data-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <button type="button" id="close" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <div id="videoModalBox" class="modal-video embed-responsive embed-responsive-16by9">
+                  <iframe id="modalFrame" src="https://www.youtube.com/embed/1y3EqYdEMw0" frameborder="0"
+                    allowscriptaccess="always" allow="autoplay"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    webkitallowfullscreen mozallowfullscreen allowfullscreen>
+                  </iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-
-
+    <div class="ava-divider">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0072bb" fill-opacity="1" d="M0,224L60,202.7C120,181,240,139,360,112C480,85,600,75,720,106.7C840,139,960,213,1080,218.7C1200,224,1320,160,1380,128L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z" style="--darkreader-inline-fill:#065d95;" data-darkreader-inline-fill=""></path></svg>
+    </div>
   </main>
-
-
+  
   <footer>
     <div class="footer-wrapper">
-      <div class="col-lg justify-content-center align-content-center">
+      <div class="m-auto">
         <div class="footer-brand">
           <a href="#logo" class="navbar-brand">
             <img src="img/AVA-logo.png" alt="" />
@@ -167,33 +230,6 @@
             </script>
           </small>
         </div>
-      </div>
-      <div class="col-4 col-md">
-        <h5>Features</h5>
-        <ul class="list-unstyled text-small">
-          <li><a class="text-muted" href="#">Cool stuff</a></li>
-          <li><a class="text-muted" href="#">Random feature</a></li>
-          <li><a class="text-muted" href="#">Team feature</a></li>
-          <li><a class="text-muted" href="#">Stuff for developers</a></li>
-        </ul>
-      </div>
-      <div class="col-4 col-md">
-        <h5>Resources</h5>
-        <ul class="list-unstyled text-small">
-          <li><a class="text-muted" href="#">Business</a></li>
-          <li><a class="text-muted" href="#">Education</a></li>
-          <li><a class="text-muted" href="#">Government</a></li>
-          <li><a class="text-muted" href="#">Gaming</a></li>
-        </ul>
-      </div>
-      <div class="col-4 col-md">
-        <h5>About</h5>
-        <ul class="list-unstyled text-small">
-          <li><a class="text-muted" href="#">Team</a></li>
-          <li><a class="text-muted" href="#">Locations</a></li>
-          <li><a class="text-muted" href="#">Privacy</a></li>
-          <li><a class="text-muted" href="#">Terms</a></li>
-        </ul>
       </div>
     </div>
   </footer>

@@ -9,15 +9,16 @@ footer{
         flex-flow: row wrap;
         margin: auto;
 
-        div.col-lg{
-            justify-content: center;
-            align-items: center;
+        
             
             div.footer-brand{
+                display: flex;
+                flex-flow: column;
+                justify-content: center;
+                align-items: center;
+                
 
                 a.navbar-brand{
-                margin: auto;
-                
                     img{
                         width: 60px;
                         height: 60px;
@@ -26,6 +27,5 @@ footer{
 
            }
             
-        }
     }
 }

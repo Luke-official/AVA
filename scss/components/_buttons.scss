@@ -18,6 +18,24 @@ a.ava-btn {
     color: $card_white;
     font-weight: $font-w-600;
     font-size: $font-18;
+    text-decoration: none;
+
+    &.cta-btn{
+        font-size: 22px;
+        border-radius: .45rem;
+    }
+
+    button {
+        a:hover {
+            text-decoration: none;
+        }
+    }
+
+    &:hover{
+        color: $card_white;
+        background-color: #9c9c9c;
+        text-decoration: none;
+    }
 
     &.btn-outline {
         background-color: transparent;

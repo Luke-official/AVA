@@ -14,7 +14,7 @@
     .team-card{
         display: flex;
         flex-flow: column;
-      // @extend .jus-baseline;
+      //@extend .jus-baseline;
         justify-content: baseline;
         margin: 16px 32px;
         padding: 20px;
@@ -23,25 +23,46 @@
         background-color: white;
         border-radius: 10px;
         box-shadow:  rgba(255, 255, 255, 0.4) 5px 5px,  rgba(255, 255, 255, 0.3) 10px 10px,  rgba(255, 255, 255, 0.2) 15px 15px, rgba(255, 255, 255, 0.1) 20px 20px, rgba(255, 255, 255, 0.1) 25px 25px;
+        
 
-        @media screen and (max-width:567px){
+        &:hover{
+
+            div.img-box{
+
+                img{
+                    transform: scale(1.2);
+                }
+                
+            }
             
-            
+        }
+
+        a{
+            color: #3f3f3f;
+            text-decoration: none;
+
+            &:hover{
+                font-weight: 500;
+                color:#002f96;
+                text-decoration: none;
+            }
         }
         
 
         div.img-box{
             text-align: center;
-            
             object-fit:cover;
             border-radius:50%;
+            
 
             img{
+                transition: ease-in-out 3ms ;
                 margin: auto;
                 object-fit:cover;
+                background-position: bottom;
                 border-radius:50%;
-                width: 90px;
-                height:90px;
+                width: 120px;
+                height:120px;
                 box-shadow: 8px 8px 8px -5px #666666 ;
             }
 
